@@ -1,0 +1,85 @@
+----
+
+==Programming paradigms==
+
+
+[[Programming]] [[paradigm]]
+
+* [[Action language|Action]]
+* [[Agent-oriented programming|Agent-oriented]]
+* [[Array programming|Array-oriented]]
+* [[Automata-based programming|Automata-based]]
+* [[Concurrent computing]]
+** [[Relativistic programming]]
+* [[Data-driven programming|Data-driven]]
+* [[Declarative programming|Declarative]] (contrast: [[Imperative programming|Imperative]])
+** [[Functional programming|Functional]]
+*** [[Functional logic programming|Functional logic]]
+*** [[Purely functional programming|Purely functional]]
+** [[Logic programming|Logic]]
+*** [[Abductive logic programming|Abductive logic]]
+*** [[Answer set programming|Answer set]]
+*** [[Concurrent logic programming|Concurrent logic]]
+*** [[Functional logic programming|Functional logic]]
+*** [[Inductive logic programming|Inductive logic]]
+** [[Constraint programming|Constraint]]
+*** [[Constraint logic programming|Constraint logic]]
+**** [[Concurrent constraint logic programming|Concurrent constraint logic]]
+** [[Dataflow programming|Dataflow]]
+*** [[Flow-based programming|Flow-based]]
+*** [[Reactive programming|Reactive]]
+**** [[Functional reactive programming|Functional reactive]]
+** [[Ontology language|Ontology]]
+** [[Query language]]
+* [[Differentiable programming|Differentiable]]
+* [[Dynamic programming language|Dynamic/scripting]]
+* [[Event-driven programming|Event-driven]]
+* [[Function-level programming|Function-level]] (contrast: [[Value-level programming|Value-level]])
+** [[Tacit programming|Point-free style]]
+*** [[Concatenative programming language|Concatenative]]
+* [[Generic programming|Generic]]
+* [[Imperative programming|Imperative]] (contrast: [[Declarative programming|Declarative]])
+** [[Procedural programming|Procedural]]
+** [[Object-oriented programming|Object-oriented]]
+*** [[Polymorphic code|Polymorphic]]
+* [[Intentional programming|Intentional]]
+* [[Language-oriented programming|Language-oriented]]
+** [[Domain-specific language|Domain-specific]]
+* [[Literate programming|Literate]]
+* [[Natural-language programming]]
+* [[Metaprogramming]]
+** [[Automatic programming|Automatic]]
+*** [[Inductive programming]]
+** [[Reflective programming|Reflective]]
+*** [[Attribute-oriented programming|Attribute-oriented]]
+** [[Macro (computer science)|Macro]]
+** [[Template metaprogramming|Template]]
+* [[Non-structured programming|Non-structured]] (contrast: [[Structured programming|Structured]])
+** [[Array programming|Array]]
+* [[Nondeterministic programming|Nondeterministic]]
+* [[Parallel computing]]
+** [[Process-oriented programming|Process-oriented]]
+* [[Probabilistic programming|Probabilistic]]
+* [[Quantum programming|Quantum]]
+* [[Set theoretic programming|Set-theoretic]]
+* [[Stack-oriented programming|Stack-based]]
+* [[Structured programming|Structured]] (contrast: [[Non-structured programming|Non-structured]])
+** [[Block (programming)|Block-structured]]
+*** [[Structured concurrency]]
+** [[Object-oriented programming|Object-oriented]]
+*** [[Actor model|Actor-based]]
+*** [[Class-based programming|Class-based]]
+*** [[Concurrent object-oriented programming|Concurrent]]
+*** [[Prototype-based programming|Prototype-based]]
+*** By [[separation of concerns]]:
+**** [[Aspect-oriented programming|Aspect-oriented]]
+**** [[Role-oriented programming|Role-oriented]]
+**** [[Subject-oriented programming|Subject-oriented]]
+** [[Recursion (computer science)|Recursive]]
+* [[Symbolic programming|Symbolic]]
+* [[Value-level programming|Value-level]] (contrast: [[Function-level programming|Function-level]])
+
+
+([[Programming paradigms navbar]])
+
+----

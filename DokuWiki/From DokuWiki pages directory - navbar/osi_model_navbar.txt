@@ -1,0 +1,109 @@
+----
+
+==OSI Model Navbar==
+
+[[Layers]] of the [[OSI model]]
+
+[[Abstraction layer]] - [[Abstraction]]
+
+[[Application layer]] - [[Application]]
+* [[Network News Transfer Protocol (NNTP)]]
+* [[Session Initiation Protocol|SIP]]
+* [[Simple Sensor Interface protocol|SSI]]
+* [[Domain Name System (DNS)]]
+* [[File Transfer Protocol|FTP]]
+* [[Gopher (protocol)|Gopher]]
+* [[Hypertext Transfer Protocol|HTTP]]
+* [[Network File System (protocol)|NFS]]
+* [[Network Time Protocol|NTP]]
+* [[Short Message Peer-to-Peer|SMPP]]
+* [[Simple Mail Transfer Protocol|SMTP]]
+* [[Simple Network Management Protocol|SNMP]]
+* [[Telnet]]
+* [[Dynamic Host Configuration Protocol|DHCP]]
+* [[Netconf]]
+*''[[:Category:Application layer protocols''
+
+
+[[Presentation layer]] - [[Presentation]]
+* [[MIME]]
+* [[External Data Representation|XDR]]
+* [[Abstract Syntax Notation One|ASN.1]]
+* [[ASCII]]
+* [[Pretty Good Privacy|PGP]]
+
+[[Session layer]] - [[Session]]
+* [[Named pipe]]
+* [[NetBIOS]]
+* [[Session Announcement Protocol|SAP]]
+* [[Point-to-Point Tunneling Protocol|PPTP]]
+* [[Real-time Transport Protocol|RTP]]
+* [[SOCKS]]
+* [[SPDY]]
+
+
+[[Transport layer]] - [[Transport]]
+* [[Transmission Control Protocol|TCP]]
+* [[User Datagram Protocol|UDP]]
+* [[Stream Control Transmission Protocol|SCTP]]
+* [[Datagram Congestion Control Protocol|DCCP]]
+* [[IPX/SPX|SPX]]
+
+
+[[Network layer]] - [[Network]]:
+* [[Internet Protocol|IP]]
+** [[IPv4]]
+** [[IPv6]]
+* [[Internet Control Message Protocol|ICMP]]
+* [[IPsec]]
+* [[Internet Group Management Protocol|IGMP]]
+* [[Internetwork Packet Exchange|IPX]]
+* [[AppleTalk]]
+* [[X.25]] [[Packet Layer Protocol|PLP]]
+
+
+[[Data link]] - [[Data link layer]] ([[DLC]]) - [[Data link layer (DLC)]]
+* [[Asynchronous Transfer Mode|ATM]]
+* [[Address Resolution Protocol|ARP]]
+* [[IS-IS|IS-IS]]
+* [[Synchronous Data Link Control|SDLC]]
+* [[High-Level Data Link Control|HDLC]]
+* [[Compressed Serial Line Internet Protocol|CSLIP]]
+* [[Serial Line Internet Protocol|SLIP]]
+* [[Generic Framing Procedure|GFP]]
+* [[Parallel Line Internet Protocol|PLIP]]
+* [[IEEE 802.2]]
+* [[Logical link control|LLC]]
+* [[Media access control|MAC]]
+* [[Layer 2 Tunneling Protocol|L2TP]]
+* [[IEEE 802.3]]
+* [[Frame Relay]]
+* [[G.hn|ITU-T G.hn DLL]]
+* [[Point-to-Point Protocol|PPP]]
+* [[X.25]]&nbsp;[[LAPB]]
+* [[Link Access Procedure for Frame Relay|Q.922 LAPF]]
+
+
+[[Physical layer]] - [[Physical]]
+* [[EIA/TIA-232]]
+* [[EIA/TIA-449]]
+* [[ITU-T V-Series Recommendations|ITU-T V-Series]]
+* [[I.430]]
+* [[I.431]]
+* [[Plesiochronous digital hierarchy|PDH]]
+* [[SONET/SDH]]
+* [[Passive optical network|PON]]
+* [[Optical Transport Network|OTN]]
+* [[Digital subscriber line|DSL]]
+* [[IEEE 802.3]]
+* [[IEEE 802.11]]
+* [[IEEE 802.15]]
+* [[IEEE 802.16]]
+* [[IEEE 1394]]
+* [[G.hn|ITU-T G.hn PHY]]
+* [[Universal Serial Bus|USB]]
+* [[Bluetooth]]
+* [[RS-232]]
+* [[RS-449]]
+
+----

@@ -1,0 +1,88 @@
+----
+==Database Navbar==
+[[Database|Database management system]]:
+* [[Object database|Object-oriented]]
+** [[Comparison of object database management systems|comparison]]
+* [[Relational_database|Relational]]
+** [[List of relational database management systems|list]]
+** [[Comparison of relational database management systems|comparison]]
+* [[Key-value_database|Key-value]]
+* [[Column-oriented DBMS|Column-oriented]]
+** [[List_of_column-oriented_DBMSes|list]]
+* [[Document-oriented database|Document-oriented]]
+* [[Wide_column_store|Wide column store]]
+* [[Graph database|Graph]]
+* [[NoSQL]]
+* [[NewSQL]]
+* [[In-memory_database|In-memory]]
+** [[List_of_in-memory_databases|list]]
+* [[Multi-model_database|Multi-model]]
+** [[Comparison_of_multi-model_databases|comparison]]
+* [[Cloud_database|Cloud]]
+
+[[Database Concepts]]:
+* [[Database]]
+* [[ACID]]
+* [[Armstrong's axioms]]
+* [[Codd's_12_rules|Codd's 12 rules]]
+* [[CAP theorem]]
+* [[Create, read, update and delete|CRUD]]
+* [[Null (SQL)|Null]]
+* [[Candidate key]]
+* [[Foreign key]]
+* [[Superkey]]
+* [[Surrogate key]]
+* [[Unique key]]
+
+[[Database Objects]]:
+* [[Relation (database)|Relation]]
+** [[Table (database)|table]]
+** [[Column (database)|column]]
+** [[Row (database)|row]]
+* [[View (SQL)|View]]
+* [[Database transaction|Transaction]]
+* [[Transaction log]]
+* [[Database trigger|Trigger]]
+* [[Database index|Index]]
+* [[Stored procedure]]
+* [[Cursor (databases)|Cursor]]
+* [[Partition (database)|Partition]]
+
+[[Database Components]]:
+* [[Concurrency control]]
+* [[Data dictionary]]
+* [[Java Database Connectivity|JDBC]]
+* [[XQuery API for Java|XQJ]]
+* [[Open Database Connectivity|ODBC]]
+* [[Query language]]
+* [[Query optimization|Query optimizer]]
+* [[Query Rewriting|Query rewriting system]]
+* [[Query plan]]
+
+[[Database Functions]]:
+* [[Database administration|Administration]]
+* [[Query optimization]]
+* [[Replication (computing)#DATABASE|Replication]]
+* [[Shard_(database_architecture)|Sharding]]
+
+Related Topics:
+* [[Database model]]s
+* [[Database normalization]]
+* [[Database storage structures|Database storage]]
+* [[Distributed database]]
+* [[Federated database system]]
+* [[Referential integrity]]
+* [[Relational algebra]]
+* [[Relational calculus]]
+* [[Relational database]]
+* [[Relational model]]
+* [[Object-relational database]]
+* [[Transaction processing]]
+
+[[wp>Category:Database_management_systems|Category]]
+
+[[Outline of databases]]
+
+[[Database navbar]]
+
+----

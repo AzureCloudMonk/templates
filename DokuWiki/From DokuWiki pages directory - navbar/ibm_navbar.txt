@@ -1,0 +1,180 @@
+----
+
+==IBM Navbar==
+
+===IBM General Topics===
+See [[IBM topics]], [[IBM Mainframe Topics]]
+
+[[History of IBM|History]]
+*[[History of IBM]]
+*[[List of mergers and acquisitions by IBM|Mergers and acquisitions]]
+*[[Think (IBM)|Think]] (motto)
+*[[History of IBM mainframe operating systems|Operating Systems]]
+
+===IBM Products===
+[[IBM Product Offerings]] and [[List of IBM products]]
+
+====Hardware====
+[[IBM Hardware]]:
+*[[IBM mainframe|Mainframe]] 
+**[[IBM Z]]
+*[[IBM Power Systems|Power Systems]]
+*[[IBM storage]]
+**[[IBM FlashSystem|FlashSystem]]
+**[[IBM DS8000 series|DS8000]]
+**Tape storage
+*[[IBM Q System One]]
+
+=====IBM Historical Hardware Product=====
+* Notable historical:
+**[[IBM Blue Gene]]
+**Microprocessors
+***[[Cell (microprocessor)|Cell]]
+***[[PowerPC|PowerPC]]
+**[[Midrange computer]]
+**[[IBM Personal Computer|Personal Computer]]
+**[[IBM ThinkPad]]
+
+====Software====
+[[IBM Software]]:
+*[[IBM cloud computing]] - [[IBM Cloud]]
+*[[IBM Cognos Analytics]]
+*[[IBM Planning Analytics]]
+*[[Watson (computer)|Watson]]
+*[[IBM Information Management Software|Information Management Software]]
+*[[Lotus Software]]
+*[[Rational Software]]
+*[[SPSS]]
+*[[ILOG]]
+*[[Tivoli Software]]: [[Tivoli Service Automation Manager|Service Automation Manager]]
+*[[IBM WebSphere|WebSphere]]
+*[[alphaWorks]]
+*[[Criminal Reduction Utilising Statistical History]]
+*[[IBM Mashup Center|Mashup Center]]
+*[[IBM PureQuery|PureQuery]]
+*[[Fortran]]
+*[[IBM Connections|Connections]]
+*[[IBM Quantum Experience]]
+*[[Carbon Design System]]
+
+===IBM Business entities===
+*[[IBM Center for The Business of Government|Center for The Business of Government]]
+*[[IBM Global Services|Global Services]]
+*[[Red Hat]]
+*[[Kenexa]]
+*[[List of international subsidiaries of IBM|International subsidiaries]]
+*[[IBM Research|Research]]
+*[[The Weather Company]] ([[Weather Underground (weather service)|Weather Underground]])
+
+*Former:
+**[[IBM Product Center]]
+
+
+===IBM Facilities===
+*Towers
+**[[1250 René-Lévesque|1250 René-Lévesque, Montreal, QC]]
+**[[One Atlantic Center|One Atlantic Center, Atlanta, GA]]
+*Software Labs
+**[[IBM Rome Software Lab|Rome Software Lab]]
+**[[IBM Toronto Software Lab|Toronto Software Lab]]
+*IBM Buildings
+**[[330 North Wabash|330 North Wabash, Chicago, IL]]
+**[[1200 Fifth|Seattle]]
+*Facilities
+**[[Thomas J. Watson Research Center]]
+**[[IBM Hakozaki Facility|Hakozaki Facility]]
+**[[IBM Yamato Facility|Yamato Facility]]
+*[[Cambridge Scientific Center]]
+*[[IBM Hursley]]
+*[[IBM Canada Head Office Building|Canada Head Office Building]]
+*[[IBM Rochester]]
+
+
+===IBM Initiatives===
+*[[IBM Academy of Technology|Academy of Technology]]
+*[[IBM Deep Thunder|Deep Thunder]]
+*[[IBM Fellow]]
+*[[IBM's The Great Mind Challenge|The Great Mind Challenge]]
+*[[IBM Developer|Developer]]: [[Develothon]]
+*[[Linux Technology Center]]
+*[[IBM Virtual Universe Community]]
+*[[Smarter Planet]]
+*[[World Community Grid]]
+
+
+===IBM Inventions===
+*[[Automated teller machine]]
+*[[Cynefin framework]]
+*[[Keypunch|Electronic keypunch]]
+*[[Hard disk drive]]
+*[[Floppy disk]]
+*[[Dynamic random-access memory|DRAM]]
+*[[Relational model]]
+*[[IBM Selectric typewriter|Selectric typewriter]]
+* [[SQL]] - [[Relational database]]
+*[[Swap (finance)|Financial swaps]]
+*[[Universal Product Code]]
+*[[Magnetic stripe card]]
+*[[Sabre (computer system)|Sabre airline reservation system]]
+*[[Scanning tunneling microscope]]
+
+===IBM Terminology===
+*[[Globally integrated enterprise]]
+*[[Commercial Processing Workload]]
+*[[Consumability]]
+*[[Electronic business|e-business]]
+
+===IBM CEOs===
+*[[Thomas J. Watson]] ([[1914]]–[[1956]])
+*[[Thomas Watson Jr.]] ([[1956]]–[[1971]])
+*[[T. Vincent Learson]] (1971–1973)
+*[[Frank T. Cary]] (1973–1981)
+*[[John R. Opel]] (1981–1985)
+*[[John Fellows Akers]] (1985–1993)
+*[[Lou Gerstner|Louis V. Gerstner Jr.]] (1993–2002)
+*[[Samuel J. Palmisano]] (2002–2011)
+*[[Ginni Rometty]] (2012–2020)
+*[[Arvind Krishna]] (2020–present)
+
+===IBM Board of directors===
+*[[Thomas Buberl]]
+*[[Michael L. Eskew]]
+*[[David Farr]]
+*[[Alex Gorsky]]
+*[[Michelle Howard|Michelle J. Howard]]
+*[[Arvind Krishna]]
+*[[Andrew N. Liveris]]
+*[[Martha E. Pollack]]
+*[[Ginni Rometty|Virginia M. Rometty]]
+*[[Joseph R. Swedish]]
+*[[Sidney Taurel]]
+*[[Peter Voser|Peter R. Voser]]
+
+===IBM Other===
+*''[[A Boy and His Atom]]''
+*[[Common Public License]]/[[IBM Public License]]
+*[[Customer engineer]]
+*[[Deep Blue (chess computer)|Deep Blue]]
+*[[Deep Thought (chess computer)|Deep Thought]]
+*[[Dynamic infrastructure]]
+*[[GUIDE International]]
+*''[[IBM and the Holocaust]]''
+*[[IBM international chess tournament]]
+* [[IBM worker organization]]
+*[[Lucifer (cipher)|Lucifer cipher]]
+*[[Mathematica: A World of Numbers... and Beyond|Mathematica]]
+*[[IBM Plex]]
+*[[SHARE (computing)|SHARE computing]]
+*[[ScicomP]]
+*[[IBM Q Experience|Q Experience]]
+*Sports teams
+**[[IBM Big Blue (X-League)|American football]]
+**[[IBM Big Blue (rugby union)|Rugby union]]
+* [[GlobalFoundries]]
+
+[[Fair Use]] [[Source]]: https://en.wikipedia.org/wiki/Template:IBM
+
+([[IBM navbar]])
+
+----
+

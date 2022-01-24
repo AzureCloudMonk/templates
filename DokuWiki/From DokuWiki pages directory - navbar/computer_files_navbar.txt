@@ -1,0 +1,66 @@
+[[Navbar]] [[Navbar]]
+
+----
+[[Computer file]]s
+Types: 
+* [[Binary file]] / [[text file]]
+* [[File format]]
+** [[List of file formats]]
+** [[List of file signatures|File signatures]]
+** [[Magic number (programming)|Magic number]]
+* [[Metafile]]
+* [[Sidecar file]]
+* [[Sparse file]]
+* [[Swap file]]
+* [[System file]]
+* [[Temporary file]]
+* [[Zero-byte file]]
+
+Properties
+* [[Filename]]
+** [[8.3 filename]]
+** [[Long filename]]
+** [[Filename mangling]]
+* [[Filename extension]]
+** [[List of filename extensions]]
+* [[File attribute]]
+** [[Extended file attributes]]
+* [[File size]]
+* [[Hidden file and hidden directory|Hidden file / Hidden directory]]
+
+Organisation
+* [[Directory (computing)|Directory/folder]]
+** [[NTFS links]]
+** [[Temporary folder]]
+* [[Directory structure]]
+* [[File sequence]]
+* [[File system]]
+** [[Filesystem Hierarchy Standard]]
+* [[Path (computing)|Path]]
+
+[[File operation|Operations]]:
+* [[Open (system call)|Open]]
+* [[Close (system call)|Close]]
+* [[Read (system call)|Read]]
+* [[Write (system call)|Write]]
+
+Linking:
+* [[Alias (Mac OS)|Alias]]
+* [[File descriptor]]
+* [[Hard link]]
+* [[Shadow (OS/2)|Shadow]]
+* [[Shortcut (computing)|Shortcut]]
+* [[Symbolic link]]
+
+Management:
+* [[File comparison]]
+* [[Data compression]]
+* [[File manager]]
+** [[Comparison of file managers]]
+* [[File system permissions]]
+* [[File transfer]]
+** [[File sharing]]
+* [[File verification]]
+
+([[Computer files navbar]])
+----

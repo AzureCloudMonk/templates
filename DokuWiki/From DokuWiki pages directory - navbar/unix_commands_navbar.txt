@@ -1,0 +1,170 @@
+----
+
+Unix commands ([[Unix programs]]
+
+[[Unix]] [[command-line interface]] programs and [[shell builtin]]s: 
+[[Linux File system]]:
+* [[cat (Unix)|cat]]
+* [[chmod]]
+* [[chown]]
+* [[chgrp]]
+* [[cksum]]
+* [[cmp (Unix)|cmp]]
+* [[cp (Unix)|cp]]
+* [[dd (Unix)|dd]]
+* [[du (Unix)|du]]
+* [[df (Unix)|df]]
+* [[file (command)|file]]
+* [[fuser (Unix)|fuser]]
+* [[ln (Unix)|ln]]
+* [[ls]]
+* [[mkdir]]
+* [[mv]]
+* [[pax (command)|pax]]
+* [[pwd]]
+* [[rm (Unix)|rm]]
+* [[rmdir]]
+* [[split (Unix)|split]]
+* [[tee (command)|tee]]
+* [[touch (command)|touch]]
+* [[type (Unix)|type]]
+* [[umask]]
+
+| group2 = Processes
+| list2  =
+* [[at (command)|at]]
+* [[Job control (Unix)#Commands|bg]]
+* [[cron|crontab]]
+* [[Job control (Unix)#Commands|fg]]
+* [[kill (command)|kill]]
+* [[nice (Unix)|nice]]
+* [[ps (Unix)|ps]]
+* [[time (Unix)|time]]
+
+| group3 = User environment
+| list3  =
+* [[env]]
+* [[exit (command)|exit]]
+* [[logname]]
+* [[mesg]]
+* [[talk (software)|talk]]
+* [[tput]]
+* [[uname]]
+* [[who (Unix)|who]]
+* [[write (Unix)|write]]
+
+| group4 = Text processing
+| list4  =
+* [[AWK|awk]]
+* [[basename]]
+* [[comm]]
+* [[csplit]]
+* [[cut (Unix)|cut]]
+* [[diff]]
+* [[dirname]]
+* [[ed (text editor)|ed]]
+* [[ex (text editor)|ex]]
+* [[fold (Unix)|fold]]
+* [[head (Unix)|head]]
+* [[iconv]]
+* [[join (Unix)|join]]
+* [[m4 (computer language)|m4]]
+* [[more (command)|more]]
+* [[nl (Unix)|nl]]
+* [[paste (Unix)|paste]]
+* [[patch (Unix)|patch]]
+* [[printf (Unix)|printf]]
+* [[sed]]
+* [[sort (Unix)|sort]]
+* [[strings (Unix)|strings]]
+* [[tail (Unix)|tail]]
+* [[tr (Unix)|tr]]
+* [[uniq]]
+* [[vi]]
+* [[wc (Unix)|wc]]
+* [[xargs]]
+
+| group5 = [[Shell builtin]]s
+| list5  =
+* [[alias (command)|alias]]
+* [[cd (command)|cd]]
+* [[echo (command)|echo]]
+* [[test (Unix)|test]]
+* [[Environment variable#unset command|unset]]
+* [[wait (command)|wait]]
+
+<!-- Networking  is not part of SUS
+| group6 = [[Network utility|Networking]]
+| list6  =
+* [[Dig (command)|dig]]
+* [[host (Unix)|host]]
+* [[ifconfig]]
+* [[inetd]]
+* [[netcat]]
+* [[netstat]]
+* [[nslookup]]
+* [[Ping (networking utility)|ping]]
+* [[rdate]]
+* [[rlogin]]
+* [[route (command)|route]]
+* [[OpenSSH|ssh]]
+* [[traceroute]]-->
+
+| group7 = Searching
+| list7  =
+* [[Find (Unix)|find]]
+* [[grep]]
+
+| group8 = Documentation
+| list8  =
+* [[Man page|man]]
+
+| group9 = [[Software development]]
+| list9  = <!-- There are a huge number of software development tools for Unix; this list should be restricted to ones that are standardized as part of Unix, i.e., those marked [SD], [CD], or [FD] (http://pubs.opengroup.org/onlinepubs/9699919799/help/codes.html) within the Unix/POSIX specifications -->
+* [[ar (Unix)|ar]]
+* [[ctags]]
+* [[lex (software)|lex]]
+* [[make (software)|make]]
+* [[nm (Unix)|nm]]
+* [[strip (Unix)|strip]]
+* [[yacc]]
+
+| group10 = Miscellaneous
+| list10  =
+* [[bc (programming language)|bc]]
+* [[cal (Unix)|cal]]
+* [[expr]]
+* [[System V printing system|lp]]
+* [[od (Unix)|od]]
+* [[sleep (command)|sleep]]
+* [[true and false (commands)|true and false]]
+
+| belowclass = hlist
+| below =
+* {{icon|CAT}} '''Categories'''
+** [[:Category:Standard Unix programs|Standard Unix programs]]
+** [[:Category:Unix SUS2008 utilities|Unix SUS2008 utilities]]
+* {{icon|list}} '''[[List of Unix commands|List]]'''
+
+}}<noinclude>{{documentation|content=
+
+Since this template affects many articles, you may wish to discuss changes on the talk page first. This should really only include standard universal commands that come with all distributions adhering to the [[Single UNIX Specification]].
+
+==See also==
+* [[Windows commands]]
+
+==References==
+* [[Command-line interface|Command line]]
+* [http://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html Issue 7 XCU: Shell & Utilities]
+* [http://pubs.opengroup.org/onlinepubs/000095399/utilities/contents.html Issue 6 XCU: Shell & Utilities]
+* [http://pubs.opengroup.org/onlinepubs/007908799/xcuix.html Issue 5 XCU: Commands & Utilities]
+
+[[Category:Unix software|*]]
+
+[[Category:Software templates]]
+
+[[Category:Operating system templates‎]]
+
+
+([[Unix commands navbar]])
+----

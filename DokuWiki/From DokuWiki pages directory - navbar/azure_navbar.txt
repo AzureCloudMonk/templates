@@ -1,0 +1,19 @@
+----
+==Azure Navbar==
+
+[[Microsoft Azure Services Platform]] - [[Microsoft Azure]]
+
+* [[Azure Platform]]: [[Microsoft Azure]]
+* [[Compute]] - [[Cloud compute]]: [[Azure Compute]] - [[Microsoft Azure Web Sites]] ([[Azure Web Apps]])
+* [[Storage]] - [[Cloud storage]]: [[Azure Storage]] 
+* [[Database]] - [[Cloud databases]]:
+** [[SQL Database]] - [[Cloud SQL Database]]: [[Microsoft Azure SQL Database]] 
+** [[Data Lake]]: [[Azure Data Lake]]
+** [[Search]] - [[Cloud Search]]: [[Azure Search]]
+** [[NoSQL]] - [[Cloud NoSQL]]: [[Cosmos DB]]
+
+* [[Messaging]] - [[Cloud Messaging]] - [[Stream Analytics]]: [[Azure Stream Analytics]]
+
+* [[Developer Tools]]: [[Cloud Developer Tools]]: [[Microsoft Visual Studio]] [[Azure DevOps Services]] (formerly [[VSTS]] - [[Azure DevOps]]
+
+----

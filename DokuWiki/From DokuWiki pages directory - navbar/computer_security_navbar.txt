@@ -1,0 +1,58 @@
+----
+This article is part of a series on [[Information security]].
+
+'''Related security categories:
+* [[Automotive security]]
+* [[Cybercrime]]
+** [[wp>Cybersex trafficking]]
+** [[Computer fraud]]
+* [[Cyberwarfare]]
+* [[Internet security]]
+* [[Mobile security]]
+* [[Network security]]
+
+'''Threats:'''
+* [[Advanced persistent threat]]
+* [[Backdoor (computing)]]
+* [[Bootkit]]s
+* [[Computer crime]]
+* [[Computer virus]]
+* [[Denial of service]]
+* [[Eavesdropping]]
+* [[Exploit (computer security)]]
+* [[Keylogger]]s
+* [[Logic bomb]]s
+* [[Malware]]
+* [[Payload (computing)]]
+* [[Phishing]]
+* [[Ransomware]]
+* [[Rootkit]]s
+* [[Screen scrape]] - [[Screen scrapers]]
+* [[Spyware]]
+* [[Trojan horse (computing)]]
+* [[Vulnerability (computing)]]
+* [[Web shell]]s
+* [[Web application security]]
+* [[Computer worm|Worms]]
+* [[SQL injection]]
+
+'''Defenses:'''
+* [[Computer access control]]
+* [[Application security]]
+** [[Antivirus software]]
+** [[Secure coding]]
+** [[Secure by default]]
+** [[Secure by design]]
+** [[Security-focused operating system]] - [[Secure operating systems]]
+* [[Authentication]]
+** [[Multi-factor authentication]] - [[Multi factor authentication]] - [[MFA]] - [[Multi-factor authentication (MFA)]] - [[Multi factor authentication (MFA)]]
+* [[Authorization]]
+* [[Data-centric security]]
+* [[Encryption]]
+* [[Firewall (computing)]]
+* [[Intrusion detection system]]
+* [[Mobile secure gateway]]
+* [[Runtime application self-protection]] - [[Runtime application self-protection (RASP)]] - [[RASP]]
+
+([[Computer security navbar]])
+----

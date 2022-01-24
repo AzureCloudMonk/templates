@@ -1,0 +1,47 @@
+----
+[[Hypertext Transfer Protocol|HTTP]]:
+* [[HTTP persistent connection|Persistence]]
+* [[HTTP compression|Compression]]
+* [[HTTPS]]
+* [[QUIC]]
+
+[[Hypertext Transfer Protocol#Request methods|Request methods]]
+* [[Hypertext Transfer Protocol#Request methods|OPTIONS]]
+* [[Hypertext Transfer Protocol#Request methods|GET]]
+* [[Hypertext Transfer Protocol#Request methods|HEAD]]
+* [[POST (HTTP)|POST]]
+* [[Hypertext Transfer Protocol#Request methods|PUT]]
+* [[Hypertext Transfer Protocol#Request methods|DELETE]]
+* [[Hypertext Transfer Protocol#Request methods|TRACE]]
+* [[Hypertext Transfer Protocol#Request methods|CONNECT]]
+* [[PATCH (HTTP)|PATCH]]
+
+[[List of HTTP header fields|Header fields]]:
+* [[HTTP cookie|Cookie]]
+* [[HTTP ETag|ETag]]
+* [[HTTP location|Location]]
+* [[HTTP referer]]
+* [[Do Not Track|DNT]]
+* [[X-Forwarded-For]]
+
+[[List of HTTP status codes|Status codes]]:
+* [[HTTP 301|301 Moved Permanently]]
+* [[HTTP 302|302 Found]]
+* [[HTTP 303|303 See Other]]
+* [[HTTP 403|403 Forbidden]]
+* [[HTTP 404|404 Not Found]]
+* [[HTTP 451|451 Unavailable for Legal Reasons]]
+
+[[Security access control methods]]:
+* [[Basic access authentication]]
+* [[Digest access authentication]]
+
+[[Security vulnerabilities]]:
+* [[HTTP header injection]]
+* [[HTTP request smuggling]]
+* [[HTTP response splitting]]
+* [[HTTP parameter pollution]]
+
+[[http navbar]]
+
+----
