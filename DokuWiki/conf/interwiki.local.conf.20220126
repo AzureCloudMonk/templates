@@ -50,7 +50,7 @@ podcast   https://podcasts.google.com/search/
 
 # === InterDokuWiki with other Cloud Monk Sites ===
 
-buddha     https://Buddha-Wisdom.org/doku.php?id=
+budda     https://Buddha-Wisdom.org/doku.php?id=
 
 cloudmonk https://CloudMonk.io/
 cm        https://CloudMonk.io/wiki/doku.php?id=
@@ -59,44 +59,39 @@ devopscloud https://DevOpsCloud.io/doku.php?id=
 
 cloudops  https://Cloud-Operations.io/doku.php?id=
 
-zdevops   https://ZDevOps.Guru/doku.php?id=
+https://ZDevOps.Guru/doku.php?id=
 
-mfdevops  https://MainframeDevOps.io/doku.php?id=
+https://MainframeDevOps.io/doku.php?id=
 
-mldataops https://MLdataOps.io/doku.php?id=
+https://MLdataOps.io/doku.php?id=
 
-mlops     https://MLops.Guru/doku.php?id=
+https://MLops.Guru/doku.php?id=
 
-pydata    https://PythonDataOps.com/doku.php?id=
-pydataops https://PythonDataOps.com/doku.php?id=
+https://PythonDataOps.com/doku.php?id=
 
-sqldb     https://SQLdb.Guru/doku.php?id=
+https://SQLdb.Guru/doku.php?id=
 
-azureguru https://Azure-Cloud.Guru/doku.php?id=
+https://Azure-Cloud.Guru/doku.php?id=
 
-awsguru   https://Amazon-Cloud.Guru/doku.php?id=
+https://Amazon-Cloud.Guru/doku.php?id=
 
-gcpguru   https://GCP-Cloud.Guru/doku.php?id=
+https://Azure-Cloud.Engineer/doku.php?id=
 
-azcloudengineer  https://Azure-Cloud.Engineer/doku.php?id=
+https://AzureDevSecOps.com/doku.php?id=
 
-devsecops https://AzureDevSecOps.com/doku.php?id=
+https://CertifiedCloud.Engineer/doku.php?id=
 
-certifiedcloudengineer https://CertifiedCloud.Engineer/doku.php?id=
+https://Cloud-Architect.Pro/doku.php?id=
 
-cloudarchitect https://Cloud-Architect.Pro/doku.php?id=
+https://Ayurveda-Institute.org/doku.php?id=
 
-ahai      https://Ayurveda-Institute.org/ayurvedic-medicine-online-course/doku.php?id=
-mbhc      https://Ayurveda-Institute.org/ayurvedic-medicine-online-course/doku.php?id=
+https://Ayurvedic.io/doku.php?id=
 
-ayurvedic.io https://Ayurvedic.io/doku.php?id=
+https://Ayurvedic.Live/doku.php?id=
 
-ayurvedic.live https://Ayurvedic.Live/doku.php?id=
+https://Permaculture.Live/doku.php?id=
 
-perma     https://Permaculture.Live/doku.php?id=
-permaculture  https://Permaculture.Live/doku.php?id=
-
-scifi     https://SciFi.Love/doku.php?id=
+https://SciFi.Love/doku.php?id=
 
 
 
@@ -119,152 +114,6 @@ superuser https://superuser.com/search?q=
 su        https://superuser.com/search?q=
 serverfault https://serverfault.com/search?q=
 sf        https://serverfault.com/search?q=
-
-# === Database Software Official Docs ===
-Oracle   https://duckduckgo.com/?sites=DOM+&q=
-MySQL  https://duckduckgo.com/?sites=DOM+&q=
-SQLServer  https://duckduckgo.com/?sites=DOM+&q=
-SQLSrv  https://duckduckgo.com/?sites=DOM+&q=
-
-PostgreSQL  https://duckduckgo.com/?sites=DOM+&q=
-Postgre  https://duckduckgo.com/?sites=DOM+&q=
-
-MongoDB  https://duckduckgo.com/?sites=DOM+&q=
-Mongo  https://duckduckgo.com/?sites=DOM+&q=
-
-Redis  https://duckduckgo.com/?sites=DOM+&q=
-Db2  https://duckduckgo.com/?sites=DOM+&q=
-Elasticsearch  https://duckduckgo.com/?sites=DOM+&q=
-SQLite  https://duckduckgo.com/?sites=DOM+&q=
-Cassandra  https://duckduckgo.com/?sites=DOM+&q=
-MariaDB  https://duckduckgo.com/?sites=DOM+&q=
-Maria  https://duckduckgo.com/?sites=DOM+&q=
-
-Splunk  https://duckduckgo.com/?sites=DOM+&q=
-AzureSQL  https://duckduckgo.com/?sites=DOM+&q=
-Hive  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonDynamoDB  https://duckduckgo.com/?sites=DOM+&q=
-DynamoDB  https://duckduckgo.com/?sites=DOM+&q=
-
-Snowflake  https://duckduckgo.com/?sites=DOM+&q=
-Teradata  https://duckduckgo.com/?sites=DOM+&q=
-Solr  https://duckduckgo.com/?sites=DOM+&q=
-Neo4j  https://duckduckgo.com/?sites=DOM+&q=
-SAPHANA  https://duckduckgo.com/?sites=DOM+&q=
-SAPAdaptiveServer  https://duckduckgo.com/?sites=DOM+&q=
-
-GoogleBigQuery  https://duckduckgo.com/?sites=DOM+&q=
-BigQuery  https://duckduckgo.com/?sites=DOM+&q=
-
-HBase  https://duckduckgo.com/?sites=DOM+&q=
-
-AzureCosmosDB  https://duckduckgo.com/?sites=DOM+&q=
-CosmosDB  https://duckduckgo.com/?sites=DOM+&q=
-Cosmos  https://duckduckgo.com/?sites=DOM+&q=
-
-PostGIS  https://duckduckgo.com/?sites=DOM+&q=
-InfluxDB  https://duckduckgo.com/?sites=DOM+&q=
-Couchbase   https://duckduckgo.com/?sites=DOM+&q=
-Firebird  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonRedshift  https://duckduckgo.com/?sites=DOM+&q=
-Redshift  https://duckduckgo.com/?sites=DOM+&q=
-
-Memcached  https://duckduckgo.com/?sites=DOM+&q=
-Informix  https://duckduckgo.com/?sites=DOM+&q=
-SparkSQL  https://duckduckgo.com/?sites=DOM+&q=
-Firebase  https://duckduckgo.com/?sites=DOM+&q=
-
-AzureSynapseAnalytics  https://duckduckgo.com/?sites=DOM+&q=
-AzureSynapse  https://duckduckgo.com/?sites=DOM+&q=
-
-CouchDB   https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonAurora  https://duckduckgo.com/?sites=DOM+&q=
-Aurora  https://duckduckgo.com/?sites=DOM+&q=
-
-etcd  https://duckduckgo.com/?sites=DOM+&q=
-H2  https://duckduckgo.com/?sites=DOM+&q=
-
-GoogleCloudFirestore  https://duckduckgo.com/?sites=DOM+&q=
-GoogleFirestore  https://duckduckgo.com/?sites=DOM+&q=
-Firestore  https://duckduckgo.com/?sites=DOM+&q=
-
-AzureSearch  https://duckduckgo.com/?sites=DOM+&q=
-OracleEssbase  https://duckduckgo.com/?sites=DOM+&q=
-CockroachDB  https://duckduckgo.com/?sites=DOM+&q=
-AzureDataExplorer  https://duckduckgo.com/?sites=DOM+&q=
-Prometheus  https://duckduckgo.com/?sites=DOM+&q=
-Ingres  https://duckduckgo.com/?sites=DOM+&q=
-SAPSQLAnywhere  https://duckduckgo.com/?sites=DOM+&q=
-AzureTableStorage  https://duckduckgo.com/?sites=DOM+&q=
-SAPIQ  https://duckduckgo.com/?sites=DOM+&q=
-
-GoogleCloudDatastore  https://duckduckgo.com/?sites=DOM+&q=
-GoogleDatastore  https://duckduckgo.com/?sites=DOM+&q=
-
-ArangoDB  https://duckduckgo.com/?sites=DOM+&q=
-OrientDB  https://duckduckgo.com/?sites=DOM+&q=
-OracleNoSQL  https://duckduckgo.com/?sites=DOM+&q=
-SAPAdvantage  https://duckduckgo.com/?sites=DOM+&q=
-IBMCloudant  https://duckduckgo.com/?sites=DOM+&q=
-
-GoogleCloudBigtable  https://duckduckgo.com/?sites=DOM+&q=
-GoogleBigtable  https://duckduckgo.com/?sites=DOM+&q=
-Bigtable  https://duckduckgo.com/?sites=DOM+&q=
-
-GoogleCloudSpanner  https://duckduckgo.com/?sites=DOM+&q=
-CloudSpanner  https://duckduckgo.com/?sites=DOM+&q=
-
-ApacheDruid  https://duckduckgo.com/?sites=DOM+&q=
-ApachePhoenix  https://duckduckgo.com/?sites=DOM+&q=
-RavenDB   https://duckduckgo.com/?sites=DOM+&q=
-RethinkDB  https://duckduckgo.com/?sites=DOM+&q=
-GraphDB  https://duckduckgo.com/?sites=DOM+&q=
-ApacheJena  https://duckduckgo.com/?sites=DOM+&q=
-ApacheDrill  https://duckduckgo.com/?sites=DOM+&q=
-OracleBerkeleyDB  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonNeptune  https://duckduckgo.com/?sites=DOM+&q=
-Neptune  https://duckduckgo.com/?sites=DOM+&q=
-
-IMS  https://duckduckgo.com/?sites=DOM+&q=
-OracleCoherence  https://duckduckgo.com/?sites=DOM+&q=
-PerconaServerForMySQL  https://duckduckgo.com/?sites=DOM+&q=
-EDBPostgres  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonCloudSearch  https://duckduckgo.com/?sites=DOM+&q=
-CloudSearch  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonSimpleDB  https://duckduckgo.com/?sites=DOM+&q=
-SimpleDB  https://duckduckgo.com/?sites=DOM+&q=
-
-Db2Warehouse  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonDocumentDB  https://duckduckgo.com/?sites=DOM+&q=
-DocumentDB  https://duckduckgo.com/?sites=DOM+&q=
-
-ApacheKylin  https://duckduckgo.com/?sites=DOM+&q=
-GridDB  https://duckduckgo.com/?sites=DOM+&q=
-OracleRdb  https://duckduckgo.com/?sites=DOM+&q=
-SQL.JS  https://duckduckgo.com/?sites=DOM+&q=
-NonStopSQL  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonTimestream  https://duckduckgo.com/?sites=DOM+&q=
-Timestream  https://duckduckgo.com/?sites=DOM+&q=
-
-D3  https://duckduckgo.com/?sites=DOM+&q=
-EventStoreDB  https://duckduckgo.com/?sites=DOM+&q=
-PostgresXL  https://duckduckgo.com/?sites=DOM+&q=
-PerconaServerForMongoDB  https://duckduckgo.com/?sites=DOM+&q=
-WebSphereeXtremeScale  https://duckduckgo.com/?sites=DOM+&q=
-
-AmazonKeyspaces  https://duckduckgo.com/?sites=DOM+&q=
-Keyspaces  https://duckduckgo.com/?sites=DOM+&q=
-
-Db2EventStore  https://duckduckgo.com/?sites=DOM+&q=
-
 
 # === Programming Language and Software Official Docs ===
 angular   https://duckduckgo.com/?sites=angular.io+&q=
