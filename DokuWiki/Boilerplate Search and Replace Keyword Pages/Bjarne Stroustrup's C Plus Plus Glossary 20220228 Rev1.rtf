@@ -1,0 +1,1192 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 ==Bjarne Stroustrup's C++ Glossary==\par
+\par
+\{\{navbar_cplusplus\}\}\par
+\par
+[[Bjarne Stroustrup]]'s [[C plus plus Glossary | C++ Glossary]]\par
+\par
+[[Fair Use]] [[Source]]: [[BSCppG]] [[2012]], [[Bjarne Stroustrup's C plus plus Glossary | Bjarne Stroustrup's C++ Glossary]]\par
+\par
+\par
+Bjarne Stroustrup's C++ Glossary\par
+\par
+Modified October 3, [[2012]]\par
+\par
+This is a [[glossary of C plus plus terms | glossary of C++ terms]], organized alphabetically by concept.\par
+\par
+"The definitions/explanations of individual [[C plus plus terms]] are necessarily very brief. To compensate, each entry includes one or more references to [[The C++ Programming language (Special Edition) ([[TC plus plus PL | TC++PL]])]] where you can find more comprehensive explanations and [[C plus plus code examples]]. I use section references, rather than page numbers, so that this [[C plus plus glossary]] can be used together with translations of my [[C plus plus books]]. It is always wise to read a whole section rather than trying to glean information from a few semi-random sentences."\par
+\par
+"For people interested in the reasons behind the [[design of C plus plus | design of C++]], most entries also refer to [[The Design and Evolution of C++ (D&E)]]. Some entries contain links other parts of my home pages, especially to my [[C plus plus FAQ]] and [[C plus plus Style and Techniques FAQ | C++ Style and Technique FAQ]]. If I find the time, I'll add references to the [[C plus plus ISO standard]]."\par
+\par
+"This glossary is specifically "C++ oriented". That is, it defines terms in the context of C++. For example, it defines [[C plus plus generic programming]] in terms of [[C plus plus templates]] and [[C plus plus object-oriented programming]] in terms of [[C plus plus virtual functions]], rather than trying to be sufficiently [[abstract]] and general to cover [[all languages]] and all usages."\par
+\par
+The entries are meant to be brief explanations, rather than precise [[C plus plus definitions]].\par
+\par
+Suggestions for improved explanations, [[C plus plus terms]] to add, or anything else that would make the [[glossary of C plus plus]] more useful, are most welcome: bs at cs dot tamu dot edu.\par
+\par
+==Glossary==\par
+\par
+\par
+* [[C plus plus !=]] - the inequality operator; compares values for inequality returning a bool. [[TC plus plus PL | TC++PL]] 2.3.1, 6.2, 16.3.10, 20.3.8, 22.4.3, 22.5.\par
+\par
+* [[C plus plus #define]] - a directive that defines a macro.\par
+\par
+* [[C plus plus #include]] - a mechanism for textual inclusion of one source file into another. Typically used to compose a translation unit out of a .c file and the header files it needs to define its view if the rest of the program. [[TC plus plus PL | TC++PL]] 2.7, 13, D&E 18.1.\par
+\par
+* [[C plus plus +=]] - add-and-assign operator; a+=b is roughly equivalent to a=a+b. Often a useful operation for user-defined types. [[TC plus plus PL | TC++PL]] 6.1.1, 6.2, 11,3,2, 20.3.9, 22.5.\par
+\par
+* [[C plus plus .c file]] - file containing definitions.\par
+\par
+* [[C plus plus .cpp file]] - see .c file\par
+\par
+* [[C plus plus .cxx file]] - see .c file\par
+\par
+* [[C plus plus .h file]] - see header file.\par
+\par
+* [[C plus plus 14882]] - [[ISO/IEC 14882]] - Standard for the C++ Programming Language.\par
+\par
+* [[C plus plus <<]] - (1) iostream output operator. [[TC plus plus PL | TC++PL]] 3.4, 21.2.1, D&E 8.3.1. (2) integer left-shift operator. [[TC plus plus PL | TC++PL]] 6.2.\par
+\par
+* [[C plus plus =]] - the assignment operator; not an equality operator. = can be used for non-const built-in types (except arrays), enumerations, strings, containers, iterators, complex, and valarray. For a class, = is by default defined member-wise assignment; if necessary, the writer of a class can define it differently. [[TC plus plus PL | TC++PL]] 2.3.1, 6.2, 11.2, 16.3.4, 20.3.6, 22.4.3, 22.5, D&E 2.12.1,11.4.4.\par
+\par
+* [[C plus plus =0]] - curious notation indicating that a virtual function is a pure virtual function. [[TC plus plus PL | TC++PL]] 12.3. D&E 13.2.1.\par
+\par
+* [[C plus plus ==]] - the equality operator; compares values for equality returning a bool. == can be used for built-in types, enumerations, strings, iterators, complex, and valarray. == is not by default defined for a class, but a user can define it for a user-defined type. Note that == doesn't have the naively expected meaning for C-style strings or arrays. [[TC plus plus PL | [[TC plus plus PL | TC++PL]]]] 2.3.1, 6.2, 16.3.10, 20.3.8, 22.4.3, 22.5.\par
+\par
+* [[C plus plus >>]] - (1) iostream input operator. [[TC plus plus PL | TC++PL]] 3.6, 21.3.2, D&E 8.3.1. (2) integer right-shift operator. [[TC plus plus PL | TC++PL]] 6.2.\par
+\par
+\par
+==A==\par
+* [[C plus plus abstract class]] - a class defining an interface only; used as a base class. Declaring a member function pure virtual makes its class abstract and prevents creation of objects of the abstract class. Use of abstract classes is one of the most effective ways of minimizing the impact of changes in a C++ program and for minimizing compilation time. Example. [[TC plus plus PL | TC++PL]] 2.5.4, 12.4.2, D&E 13.2.\par
+\par
+* [[C plus plus abstract type]] - see abstract class.\par
+\par
+* [[C plus plus abstraction]] - the act of specifying a general interface hiding implementation details. Classes, abstract classes, and templates are the primary abstraction mechanisms in C++. See also: encapsulation.\par
+\par
+* [[C plus plus access control]] - access to bases and members of a class can be controlled by declaring them public, protected, or private. [[TC plus plus PL | TC++PL]] 15.3, D&E 2.3, 13.9.\par
+\par
+* [[C plus plus ACCU]] - Association of C and C++ Users. A users group that among other things maintains a collection of professional book reviews.\par
+\par
+* [[C plus plus adapter]] - a class that takes arguments producing a function object that performs an operation based on those arguments. A simple form of a higher-order function. For example, mem_fun() adapts a member function for use by the standard algorithms. \'13See also: sequence adapter. [[TC plus plus PL | TC++PL]] 18.4.4.\par
+\par
+* [[C plus plus address]] - a memory location. [[TC plus plus PL | TC++PL]] 5.1.\par
+\par
+* [[C plus plus aggregate]] - an array or a struct without a constructor.\par
+\par
+* [[C plus plus algorithm]] - a precise definition of a computation. The standard library provides about 60 standard algorithms, such as sort(), search(), and copy_unique(). [[TC plus plus PL | TC++PL]] 3.8, 18.\par
+\par
+* [[C plus plus alignment]] - placing objects in memory to suit hardware requirements. On many machines, an object must be aligned on a word boundary for acceptable performance.\par
+\par
+* [[C plus plus allocator]] - object used by standard library containers to allocate and deallocate memory. [[TC plus plus PL | TC++PL]] 19.4.\par
+\par
+* [[C plus plus and]] - synonym for &&, the logical and operator. [[TC plus plus PL | TC++PL]] C.3.1.\par
+\par
+* [[C plus plus ANSI]] - The American national standards organization. Cooperates closely with ISO over the C++ standard.\par
+\par
+* [[ANSI C]] - see [[C]].\par
+\par
+* [[C plus plus ANSI C++]] - C++\par
+\par
+* [[C plus plus application]] - a collection of programs seen as serving a common purpose (usually providing a common interface to their users).\par
+\par
+* [[C plus plus argument]] - a value passed to a function or a template. In the case of templates, an argument is often a type.\par
+\par
+* [[C plus plus argument passing]] - The semantics of function call is to pass a copy of an argument. The copy operation is defined by the argument type's copy constructor or by binding to a reference. In either case the semantics is those of initialization. [[TC plus plus PL | TC++PL]] 7.2.\par
+\par
+* [[C plus plus argument-based lookup]] - lookup of a function name or operator based on the namespace of the arguments or operands. Often called Koenig lookup after Andrew Koenig who proposed the scheme to the standards committee. [[TC plus plus PL | TC++PL]] 8.2.6, 11.2.4, C.13.8.4.\par
+\par
+* [[C plus plus ARM]] - The Annotated C++ Reference Manual by Margaret Ellis and Bjarne Stroustrup. The 1990 C++ reference manual with detailed comments about design details and implementation techniques. Now outdated. See also: C++ standard.\par
+\par
+* [[C plus plus array]] - contiguous sequence of elements. An array doesn't know its own size; the programmer must take care to avoid range errors. Where possible use the standard library vector. [[TC plus plus PL | TC++PL]] 5.2-3, C.7.\par
+\par
+* [[C plus plus assignment operator]] - see =.\par
+\par
+* [[AT&T Bell Labs.]] - the industrial research and development labs where C and C++ were invented, initially developed, and initially used. D&E 2.14.\par
+\par
+* [[C plus plus auto]] - In C and C++98 a largely useless keyword redundantly indicating stack allocation for local variables. In C++0x a keyword indicating that a variable gets its type from its initializer. For example: double d1 = 2; auto d2 = 3*d1; (d2 will have type double). Primarily useful in generic programming.\par
+\par
+* [[C plus plus automatic garbage collection]] - see garbage collection.\par
+\par
+* [[C plus plus auto_ptr]] - standard library class template for representing ownership of an object in a way that guarantees proper release (delete) even when an exception is thrown. See also: resource management, resource acquisition is initialization. [[TC plus plus PL | TC++PL]] 14.4.2.\par
+\par
+\par
+==B==\par
+* [[C plus plus back-end]] - the parts of a compiler that generates code given an internal representation of a correct program. This representation is produced by a compiler front-end. See also: front-end.\par
+\par
+* [[C plus plus backslash]] - see [[C plus plus escape character]].\par
+\par
+* [[C plus plus back_inserter()]] - returns an iterator that can be used to add elements at the back of a container. [[TC plus plus PL | TC++PL]] 19.2.4.\par
+\par
+* [[C plus plus bad_alloc]] - standard exception thrown by new in case of failure to allocate free store. [[TC plus plus PL | TC++PL]] 6.2.6.2, 19.4.5.\par
+\par
+* [[C plus plus bad_cast]] - standard exception thrown if a dynamic_cast to a reference fails. [[TC plus plus PL | TC++PL]] 15.4.1.1, D&E 14.2.2.\par
+\par
+* [[C plus plus base class]] - a class from which another is derived. [[TC plus plus PL | TC++PL]] 2.6.2, 12, 15, D&E 2.9.\par
+\par
+* [[C plus plus base initializer]] - initializer for a base class specified in the constructor for a derived class. [[TC plus plus PL | TC++PL]] 12.2.2, 15.2.4.1, D&E 12.9.\par
+\par
+* [[C plus plus basic guarantee]] - the guarantee that basic invariants are maintained if an exception is thrown and that no resources are leaked/lost. Provided by all standard library operations. See also exception safety, nothrow guarantee, and strong guarantee. [[TC plus plus PL | TC++PL]] E.2.\par
+\par
+* [[C plus plus basic_string]] - general standard-library string template parameterized by character type. See also: string, C-style string. [[TC plus plus PL | TC++PL]] 20.3.\par
+\par
+* [[BCPL]] - ancestor to C and C++ designed and implemented by Martin Richards. [[TC plus plus PL | TC++PL]] 1.4, D&E 1.1, 3.1.\par
+\par
+* [[Bell labs]] - see [[AT&T Bell Labs]].\par
+\par
+* [[C plus plus binary operator]] - an operator taking two operands, such as /, &&, and binary *.\par
+\par
+* [[C plus plus binder]] - a function taking a function and a value, returning a function object; when called, that function object will invoke the function with the value as an argument in addition to other arguments supplied in the call. The standard library provides bind1st() and bind2nd() for binding the first and second argument of a binary function, respectively. [[TC plus plus PL | TC++PL]] 18.4.4.\par
+\par
+* [[C plus plus bit]] - a unit of memory that can hold 0 or 1. An individual bit cannot be directly accessed in C++ (the unit of addressing is a byte), but a bit can be accessed through a bitfield or by using the bitwise logical operators & and |. [[TC plus plus PL | TC++PL]] 6.2.4.\par
+\par
+* [[C plus plus bitand]] - synonym for &, the bitwise and operator. [[TC plus plus PL | TC++PL]] C.3.1.\par
+\par
+* [[C plus plus bitfield]] - a number of bits in a word made accessible as a struct member. [[TC plus plus PL | TC++PL]] C.8.1\par
+\par
+* [[C plus plus bitor]] - synonym for |, the bitwise or operator [[TC plus plus PL | TC++PL]] C.3.1.\par
+\par
+* [[C plus plus bitset]] - a standard library "almost container" holding N bits and providing logical operations on those. [[TC plus plus PL | TC++PL]] 17.5.3.\par
+\par
+* [[C plus plus Bjarne Stroustrup]] - the designer and original implementor of C++. The author of this glossary. See also: my home page.\par
+\par
+* [[C plus plus block]] - see compound statement. See also: try-block.\par
+\par
+* [[C plus plus block comment]] - comment started by /* and terminated by */. [[TC plus plus PL | TC++PL]] 6.4, D&E 3.11.1.\par
+\par
+* [[C plus plus bool]] - the built-in Boolean type. A bool can have the values true and false. [[TC plus plus PL | TC++PL]] 4.2, D&E 11.7.2.\par
+\par
+* [[C plus plus boost.org]] - a collection of people - many with ties to the C++ standards committee - devoted to creating a body of quality - peer reviewed - open source libraries designed to interoperate with the standard library. Their central "home" is their website.\par
+\par
+* [[Borland C++ Builder]] - Borland's implementation of C++ together with proprietary libraries for Windows programming in an IDE.\par
+\par
+* [[C plus plus bug]] - colloquial term for error.\par
+\par
+* [[C plus plus built-in type]] - A type provided directly by C++, such as int, double, and char*. See also: integral types, floating-point type, pointer, reference. [[TC plus plus PL | TC++PL]] 4.1.1, 5.1, 5.2, 5.5, D&E 4.4, 15.11.3.\par
+\par
+* [[C plus plus byte]] - a unit of memory that can hold a character of the C++ representation character set. The smallest unit of memory that can be directly addressed in C++. Usually, a byte is 8 bits. [[TC plus plus PL | TC++PL]] 4.6.\par
+\par
+* [[C]] - programming language designed and originally implemented by Dennis Ritchie. C++ is based on C and maintains a high degree of compatibility with C. See also: K&R C, C89, C99, ANSI C. [[TC plus plus PL | TC++PL]] B, D&E 3.12.\par
+\par
+* [[C standard library]] - the library defined for C in the C standard. Inherited by C++. Most C standard library functions have safer and more convenient alternatived in the C++ standard library. See also: algorithm, container, stream I/O, string, locale.\par
+\par
+* [[C plus plus | C++]] - a general-purpose programming language with a bias towards systems programming that supports procedural programming, data abstraction, object-oriented programming, and generic programming. C++ was designed and originally implemented by Bjarne Stroustrup. C++ is defined by ISO/IEC 14882 - Standard for the C++ Programming Language. [[TC plus plus PL | TC++PL]] describes C++ and the fundamental techniques for its use. A description of the design considerations for C++ can be found in D&E. Many commercial and free implementations exist. [[TC plus plus PL | TC++PL]] 1.3,-5, 2.1, D&E 0.\par
+\par
+* [[C plus plus standard | C++ standard]] - the definition of C++ provided by ISO. Available from ANSI; see my C++ page. [[TC plus plus PL | TC++PL]] 1.4, B.1. D&E 6.1.\par
+\par
+* [[C plus plus C++ standards committees]] - the ISO committee for C++ (WG21) and the various national standards committees that closely cooperate with it (BIS, AFNOR, DIN, etc.). Did the ANSI/ISO standards committee spoil C++?. See also: C++ Standard. D&E 6.2.\par
+\par
+* [[C plus plus C++ standards process]] - see C++ standards committees\par
+\par
+* [[C plus plus C++/CLI]] - A set of Microsoft extensions to C++ for use with their .Net system. See FAQ comments.\par
+\par
+* [[C plus plus C++03]] - name for the minor revision of the C++ standard represented by the 2003 corrigenda ("a bug fix release").\par
+\par
+* [[C plus plus C++0x]] - the upcoming revision of the ISO C++ standard; 'x' is scheduled to be '9'. See my publicatons page.\par
+\par
+* [[C plus plus C++98]] - the ISO C++ standard. See my C++ page.\par
+\par
+* [[C-style cast]] - dangerous form of explicit type conversion; prefer new-style cast if you must use explicit type conversion. [[TC plus plus PL | TC++PL]] 6.2.7, D&E 14.3.5.1.\par
+\par
+* [[C-style string]] - zero-terminated array of characters, supported by C standard library functions. A low-level and error-prone mechanism; where possible prefer strings. [[TC plus plus PL | TC++PL]] 3.5.1, 20.3.7, 20.4.\par
+\par
+* [[C plus plus C/C++]] - (1) an abbreviation used when discussing similarities, differences, and compatibility issues of C and C++. (2) a mythical language referred to by people who cannot or do not want to recognize the magnitude of differences between the facilities offered by C and C++ or the significant differences in the programming styles supported by the two language. See also: multi-paradigm programming, object-oriented programming, generic programming, exception, template, user-defined type, C++ standard library.\par
+\par
+* [[C plus plus C/C++ compatibility]] - C++ was designed to be as compatible as possible to C, but no more. This basically means as compatible as can be without compromising C++'s level of type safety. You can download Appendix B of [[TC plus plus PL | TC++PL]],. Compatibility, which describes incompatibilities and differences in facilities offered by C and C++. [[TC plus plus PL | TC++PL]] B. D&E 2.7, 3.12, 4.5.\par
+\par
+* [[C plus plus C89]] - The 1989 ANSI standard for C based on K&R C with a few additions borrowed from C++, such as function prototypes and const. See also: K&R C, C99.\par
+\par
+* [[C plus plus C99]] - The 1999 ISO standard for C based on C89 with additions to support Fortran-style numeric computation. It also borrows a few more features, such as line comments (// comments) and declarations as statements, from C++.\par
+\par
+* [[C plus plus call-by-reference]] - declaring a function argument type to be a reference, thus passing a reference rather than a value to the called function. See Also: call-by-value. [[TC plus plus PL | TC++PL]] 5.5, D&E 3.7.\par
+\par
+* [[C plus plus call-by-value]] - passing a copy of an argument to the called function. The semantics of function call is to pass a copy of an argument. The copy operation is defined by the argument type's copy constructor. See Also: call-by-reference. [[TC plus plus PL | TC++PL]] 7.2.\par
+\par
+* [[C plus plus cast]] - operator for explicit type conversion; most often best avoided. See also dynamic_cast, C-style cast, new-style cast. [[TC plus plus PL | TC++PL]] 6.2.7, D&E 7.2, 14.2.2.1.\par
+\par
+* [[C plus plus catch]] - keyword used to introduce a catch-clause.\par
+\par
+* [[C plus plus catch(...)]] - catch every exception. [[TC plus plus PL | TC++PL]] 14.3.2, D&E 16.5.\par
+\par
+* [[C plus plus catch-clause]] - a part of a try-block that handles exceptions of a specified type. Also called a handler or an exception handler. [[TC plus plus PL | TC++PL]] 8.3.1, 14.3, D&E 16.3-4.\par
+\par
+* [[C plus plus cerr]] - standard unbuffered ostream for error or diagnostic output. [[TC plus plus PL | TC++PL]] 21.2.1.\par
+\par
+* [[C plus plus Cfront]] - the front-end of Bjarne Stroustrup's original C++ compiler. D&E 3.3.\par
+\par
+* [[C plus plus char]] - character type; typically an 8-bit byte. See also: wchar_t. [[TC plus plus PL | TC++PL]] 4.3, C.3.4.\par
+\par
+* [[C plus plus char*]] - pointer to a char or an array of char. Typically assumed to point to a C-style string. Prefer a standard library string over a C-style string when you can. [[TC plus plus PL | TC++PL]] 2.3.3, 13.5.2.\par
+\par
+* [[C plus plus character set]] - a set of integer values with a mapping to character representations; for example, ASCII (ANSI13.4-1968) gives meaning to the values 0-127. ASCII is C++'s representation character set, the character set used to represent program source text. [[TC plus plus PL | TC++PL]] C.3. D&E 6.5.3.\par
+\par
+* [[C plus plus character type]] - char, unsigned char, and signed char. These are three distinct types. See also: wchar_t. [[TC plus plus PL | TC++PL]] 2.3.1, 4.3, C.3.4.\par
+\par
+* [[C plus plus cin]] - standard istream. [[TC plus plus PL | TC++PL]] 3.6, 21.3.1 D&E 8.3.1.\par
+\par
+* [[C plus plus class]] - a user-defined type. A class can have member functions, member data, member constants, and member types. A class is thee primary mechanism for representing concepts in C++. See also: template class. [[TC plus plus PL | TC++PL]] 2.5.2, 10, D&E 2.3.\par
+\par
+* [[C plus plus class hierarchy]] - a collection of classes organized into a directed acyclic graph (DAG) by derived/base relationships. [[TC plus plus PL | TC++PL]] 2.6.2, 12, 15, D&E 1.1, 7.2, 8.2.3.\par
+\par
+* [[C plus plus class template]] - see template class.\par
+\par
+* [[Classic C]] - see [[K&R C]].\par
+\par
+* [[C plus plus clone]] - a function that makes a copy of an object; usually a clone function relies on run-time information (e.g. a virtual function call) to correctly copy an object given only a pointer or reference to a sub-object.\par
+\par
+* [[C plus plus closure]] - object representing a context. C++ does not have general closures, but function objects can be efficiently used to hold specific parts of a context relevant to a computation. [[TC plus plus PL | TC++PL]] 22.4.7, 18.4.\par
+\par
+* [[C plus plus co-variant return type]] - see return type relaxation.\par
+\par
+* [[C plus plus code generator - the part of a compiler that takes the output from the front-end and generates code from it. See also: back-end, optimizer.\par
+\par
+* [[C plus plus collection]] - a term sometimes used as a synonym for container.\par
+\par
+* [[C plus plus Comeau C++]] - a family of ports of the EDG C++ front-end.\par
+\par
+* [[C plus plus comment]] - block comment /* ... */ or line comment // ...\par
+\par
+* [[C plus plus compatibility]] - see C/C++ compatibility.\par
+\par
+* [[C plus plus compiler]] - the part of a C++ implementation that produces object code from a translation unit. See also: front-end, back-end.\par
+\par
+* [[C plus plus complex]] - standard library complex number template parameterized by scalar type. [[TC plus plus PL | TC++PL]] 11.3, 22.5, D&E 3.6.1, 8.5, 15.10.2.1.\par
+\par
+* [[C plus plus compound statement]] - sequence of statements enclosed in curly braces: \{ ... \} See also: try-block. [[TC plus plus PL | TC++PL]] 2.3, 6.3.\par
+\par
+* [[C plus plus concept]] - a C++ language construct, providing type chaecking for template arguments.\par
+\par
+* [[C plus plus concept checking]] - see constraint.\par
+\par
+* [[C plus plus concrete type]] - a type without virtual functions, so that objects of the type can be allocated on the stack and manipulated directly (without a need to use pointers or references to allow the possibility for derived classes). Often, small self-contained classes. See also abstract class, vector, list, string, complex. [[TC plus plus PL | TC++PL]] 25.2.\par
+\par
+* [[C plus plus const]] - attribute of a declaration that makes the entity to which it refers readonly. See also: const member function. [[TC plus plus PL | TC++PL]] 5.4, D&E 3.8.\par
+\par
+* [[C plus plus const definition]] - declaration of a const including an initializer.\par
+\par
+* [[C plus plus const member function]] - member function declared not to modify the state of the object for which it is called. Can be called for const objects only. [[TC plus plus PL | TC++PL]] 10.2.6, D&E 13.3.\par
+\par
+* [[C plus plus constant]] - literal, object or value declared const, or enumerator.\par
+\par
+* [[C plus plus constant expression]] - expression of integral type that is evaluated at compile time. [[TC plus plus PL | TC++PL]] C.5.\par
+\par
+* [[C plus plus constraint]] - rule that restricts the set of acceptable arguments for a template parameter. For example "the argument must have + and - operators". Examples. D&E 15.4.\par
+\par
+* [[C plus plus constructor]] - member function with the same name as its class, used to initialize objects of its class. Often used to establish an invariant for the class. Often used to acquire resources. A constructor establishes a local environment in which member functions execute. See also: order of construction, destructor. [[TC plus plus PL | TC++PL]] 10.2.3, D&E 2.11.1.\par
+\par
+* [[C plus plus const_cast]] - a type conversion operation that conversion between types that differ in const and volatile type modifiers only. See also: cast. [[TC plus plus PL | TC++PL]] 15.4.2.1, D&E 14.3.4.\par
+\par
+* [[C plus plus container]] - (1) object that holds other objects. (2) type of object that holds other objects. (3) template that generates types of objects that hold other objects. (4) standard library template such as vector, list, and map. [[TC plus plus PL | TC++PL]] 16.2, 16.2.3, 17, D&E 15.3.\par
+\par
+* [[C plus plus controlled variable]] - a variable used to express the part of the exit condition of a loop that varies each time around the loop. For example ``i'' in for (int i=0; i<max; ++i) f(i);\par
+\par
+* [[C plus plus conversion]] - explicit type conversion or implicit type conversion. See also: user-defined type conversion.\par
+\par
+* [[C plus plus conversion operator]] - operator function specifying a conversion from a user-defined type to either another user-defined type or a built-in type. Note that constructors cannot define conversions to built-in types. [[TC plus plus PL | TC++PL]] 11.4, D&E 3.6.3.\par
+\par
+* [[C plus plus copy assignment]] - an assignment accepting an object of the class itself as its argument, typically Z::operator=(const Z&). A copy assignment is used for assignment of an object of type T with an object of type T. If a copy assignment is not declared for a class, memberwise copy is used. See also: copy constructor. [[TC plus plus PL | TC++PL]] 10.4.4.1, 10.4.6.3 D&E 11.4.\par
+\par
+* [[C plus plus copy constructor]] - a constructor accepting an object of the class itself as its argument, typically Z::Z(const Z&). A copy constructor is used for initialization of objects of type T with objects of type T. If a copy constructor is not declared for a class, memberwise initialization is used. See also: call-by-value, argument passing, value return, copy assignment. [[TC plus plus PL | TC++PL]] 10.4.4.1, 10.4.6.3, D&E 11.4.\par
+\par
+* [[C plus plus copy()]] - standard algorithm for copying one sequence into another. The two sequences need not be of the same type. [[TC plus plus PL | TC++PL]] 18.6.1.\par
+\par
+* [[C plus plus copying class object]] - an object of a class is copied by the class' copy assignment and copy constructors. The default meaning of these operations is memberwise copy. [[TC plus plus PL | TC++PL]] 10.4.4.1, 10.4.6.3 D&E 11.4.\par
+\par
+* [[C plus plus cout]] - standard ostream. [[TC plus plus PL | TC++PL]] 3.4, 21.2.1, D&E 8.3.1.\par
+\par
+* [[C plus plus cpp]] - see preprocessor.\par
+\par
+* [[C plus plus crosscast]] - a cast from a class to a sibling class. See also: dynamic_cast, upcast, downcast. [[TC plus plus PL | TC++PL]] 15.4.\par
+\par
+* [[C plus plus Currying]] - producing a function of N-M arguments by specifying M arguments for a function of N arguments. See also: binder, default argument. [[TC plus plus PL | TC++PL]] 18.4.4.1.\par
+\par
+\par
+==D==\par
+\par
+* [[C plus plus D&E]] - Bjarne Stroustrup: The Design and Evolution of C++. Addison Wesley. 1994. A book describing why C++ looks the way it does - the closest to a design rationale that we have for C++.\par
+\par
+* [[C plus plus data abstraction - programming relying on user-defined types with well-defined interfaces. See also: generic programming and object-oriented programming. [[TC plus plus PL | TC++PL]] 2.5, 24.2.2, D&E 9.2.1.\par
+\par
+* [[C plus plus data hiding - see information hiding\par
+\par
+* [[C plus plus data member - member of a class that can hold a value. A memer can be a static member or a non-static member. [[TC plus plus PL | TC++PL]] 2.5.2-3, 10.2, D&E 2.3, 2.5.2.\par
+\par
+* [[C plus plus declaration - an introduction of a name into a scope. The type of the name must be specified. If the declaration also specifies the entity to which the name refers, the declaration is also a definition. [[TC plus plus PL | TC++PL]] 4.9, D&E 3.11.5.\par
+\par
+* [[C plus plus decltype - C++ox operator meaning the type of its operand. For example: const double& d1 =2.0; decltype(d1) d2; (d2 will also be a const double&). Primarily useful for writing forwarding functions in generic programming.\par
+\par
+* [[C plus plus default argument - a value specified for an argument in a function declaration, to be used if a call of the function doesn't specify a value for that argument. This is commonly used to allow a simple interface for common uses while making it easy to use less common facilities by specifying more arguments. See also: default template argument, binder. [[TC plus plus PL | TC++PL]] 7.5, 10.2.3, D&E 2.12.2.\par
+\par
+* [[C plus plus default constructor - constructor requiring no arguments. Used for default initialization. [[TC plus plus PL | TC++PL]] 10.4.2, 10.4.6, D&E 2.12.2, 15.11.3.\par
+\par
+* [[C plus plus default template argument - a type or value specified for an argument in a template declaration, to be used if a use of the template doesn't provide a type or value for that argument. This is commonly used to allow a simple interface for common uses while making it easy to use less common facilities by specifying more arguments. See also: default argument. [[TC plus plus PL | TC++PL]] 13.4.1, B.3.5.\par
+\par
+* [[C plus plus default value - value defined by a default constructor. For built-in types, the default value is defined to be 0. [[TC plus plus PL | TC++PL]] 4.9.5, 10.3.1, 10.4.2 D&E 15.11.3.\par
+\par
+* [[C plus plus definition - a declaration that specifies the entity to which the declared name refers. See also: one definition rule, variable definition, const definition, template definition, function definition. [[TC plus plus PL | TC++PL]] 4.9, D&E 15.11.3.\par
+\par
+* [[C plus plus delayed evaluation - technique for eliminating temporary values, and in general to delay a computation until sufficient information is available to do it well. [[TC plus plus PL | TC++PL]] 21.4.6.3, 22.4.7.\par
+\par
+* [[C plus plus delete - object destruction operator. Invokes destructor, if any. See also: resource management, memory management, garbage collection, operator delete(). [[TC plus plus PL | TC++PL]] 6.2.6, D&E 2.3, 10.2.\par
+\par
+* [[C plus plus deprecated feature - feature left in a programming language for historical reasons only. The standard s committee recommends against its use and warns that it may be removed in future revisions of the standard.\par
+\par
+* [[C plus plus deque - double-ended queue (pronounced "deck"). A standard library template alowing insertions and deletions at both ends. Use a vector if you need insertions and deletions only at one end (as is typical). Use a list if you need frequent insertions and deletions in the middle. [[TC plus plus PL | TC++PL]] 17.2.3.\par
+\par
+* [[C plus plus derived class - a class with one or more base classes [[TC plus plus PL | TC++PL]] 2.6.2, 12, 15, D&E 3.5.\par
+\par
+* [[C plus plus design - creating a clean and reasonably simple structure of a system [[TC plus plus PL | TC++PL]] 23.3.\par
+\par
+* [[C plus plus design of C++ - see D&E.\par
+\par
+* [[C plus plus destructor - member of a class used to clean up before deleting an object. It's name is its class' name prefixed by '~'. For example, Foo's destructor is ~Foo(). Often used to release resources. A destructor is implicitly called whenever an object goes out of scope or is deleted. See also: virtual destructor, order of destruction. [[TC plus plus PL | TC++PL]] 10.4.2, D&E 2.11.1, 3.11.2.\par
+\par
+* [[C plus plus digraph - alternative representation for C++ representation characters that doesn't exist in every national character set, such as \{, \}, [, ], and #: <%, %., <:, :>, and %:. [[TC plus plus PL | TC++PL]] C.3.1.\par
+\par
+* [[C plus plus double - double-precision floating-point number. [[TC plus plus PL | TC++PL]] 4.5.\par
+\par
+double dispatch - a technique for selecting a function to be invoked on the dynamic type of two operands. [[TC plus plus PL | TC++PL]] 21.2.3.1, D&E 13.8.\par
+\par
+* [[C plus plus downcast - a cast from a base class to one of its derived classes. The name reflects the fact that in programming, trees tend to be drawn growing downwards from the roots. See also: dynamic_cast, upcast, crosscast. [[TC plus plus PL | TC++PL]] 15.4.\par
+\par
+* [[C plus plus dynamic memory - see free store.\par
+\par
+* [[C plus plus dynamic type - the type of an object as determined at run-time; e.g. using dynamic_cast or typeid. Also known as most-derived type.\par
+\par
+* [[C plus plus dynamic type safety - type safety enforced at run time (typically requiring a programmer to catch exceptions to deal with violations). An example is range checking for vectors.\par
+\par
+* [[C plus plus dynamic_cast - a type conversion operation that performs safe conversions using on run time type information. Used for navigation of a class hierarchy. See also: downcast, crosscast, static_cast. [[TC plus plus PL | TC++PL]] 15.4.1, D&E 14.2.2, 14.3.2.1.\par
+\par
+\par
+==E==\par
+\par
+* [[C plus plus EDG C++ front-end - a quality C++ compiler front-end, which is the core of several well-regarded C++ compilers.\par
+\par
+* [[C plus plus element - an object in a container.\par
+\par
+* [[C plus plus encapsulation - the enforcement of abstraction by mechanisms that prevent access to implementation details of an object or a group of objects except through a well-defined interface. C++ enforces encapsulation of private and proteced members of a class as long as users do not violate the type system using casts. See also: interface and access control. [[TC plus plus PL | TC++PL]] 15.3, 24.3.7.4, D&E 2.10.\par
+\par
+* [[C plus plus enum - keyword for declaring enumerations. [[TC plus plus PL | TC++PL]] 4.8, D&E 11.7.\par
+\par
+* [[C plus plus enumeration - a user-defined type consisting of a set of named values. [[TC plus plus PL | TC++PL]] 4.8, D&E 11.7.\par
+\par
+* [[C plus plus enumerator - a name identifying a value of an enumeration. [[TC plus plus PL | TC++PL]] 4.8, D&E 11.7.\par
+\par
+* [[C plus plus equality operator - see ==.\par
+\par
+* [[C plus plus error handling - see exception handling.\par
+\par
+* [[C plus plus escape character - the character \\, also called backslash, sed an initial character in representations of characters that cannot be represented by a single ASCII character, such as newline ('\\n') and horizontal tab ('\\t'). [[TC plus plus PL | TC++PL]] C.3.2.\par
+\par
+* [[C plus plus exception - object thrown by a throw-statement and (potentially) caught by an exception handler associated by a try-block. See also: exception safety, termination semantics, catch. [[TC plus plus PL | TC++PL]] 8.3, 14.2, D&E 16.\par
+\par
+* [[C plus plus exception handler - a catch-clause associated with a try-block for handling exceptions of a specified type. [[TC plus plus PL | TC++PL]] 8.3.1, 14.3, D&E 16.3-4.\par
+\par
+* [[C plus plus exception handling - the primary way of reporting an error that cannot be handled locally. An exception is thrown and will be caught by an exception handler or terminate() will be called. See also: exception safety, termination semantics, try-block, throw, catch. [[TC plus plus PL | TC++PL]] 8.3, 14, E, D&E 16.\par
+\par
+* [[C plus plus exception safety - the notion that a program is structured so that throwing an exception doesn't cause unintended side effects. See also: basic guarantee, strong guarantee, and nothrow guarantee. You can download Appendix E Standard-Library Exception Safety of [[TC plus plus PL | TC++PL]] describing techniques for exception handling. [[TC plus plus PL | TC++PL]] E.2.\par
+\par
+* [[C plus plus executable file - the result of linking the object files of a complete program. See also: compiler, linker.\par
+\par
+* [[C plus plus explicit - keyword used to define a constructor so that it isn't used for implicit conversions. [[TC plus plus PL | TC++PL]] 11.7.1.\par
+\par
+* [[C plus plus explicit call of constructor - See placement new.\par
+\par
+* [[C plus plus explicit call of destructor - destructors are implicitly called when an object goes out of scope or is deleted. However, if a user have taken over construction (using placement new) and destruction, a destructor must be explicitly called. Example. For example, explicit call of destructor is used in the implementation of standard library containers. See also: placement new. [[TC plus plus PL | TC++PL]] 10.4.11, E.3.1, D&E 10.5.1.\par
+\par
+* [[C plus plus explicit constructor - constructor so that will not be used for implicit conversions. [[TC plus plus PL | TC++PL]] 11.7.1.\par
+\par
+* [[C plus plus explicit instantiation - explicit request to instantiate a template in a specific context. See also: template instantiation. [[TC plus plus PL | TC++PL]] C.13.10, D&E 15.10.1.\par
+\par
+* [[C plus plus explicit qualification - (1) by namespace name, see qualified name. (2) by template argument. TCP++L 13.3.2.\par
+\par
+* [[C plus plus explicit type conversion - type conversion (explicitly) requested by the use of a C-style cast, new-style cast, or functional notation. See also, implicit type conversion, user-defined type conversion. [[TC plus plus PL | TC++PL]] 6.2.7, D&E 14.3.2.\par
+\par
+* [[C plus plus expression - combination of operators and names producing a value. [[TC plus plus PL | TC++PL]] 6.2.\par
+\par
+* [[C plus plus extended type information - any scheme that provides additional information base on the standard run time type information. [[TC plus plus PL | TC++PL]] 15.4.4.1, D&E 14.2.5.2.\par
+\par
+* [[C plus plus extension - see language extension\par
+\par
+* [[C plus plus extern - a keyword used to indicate that the definition of an entity being declared is defined elsewhere. Because "extern: is only necessary for global variables it is largely redundant.\par
+\par
+* [[C plus plus extracter - an iostream >> (put to) function. [[TC plus plus PL | TC++PL]] 21.2,21.3, D&E 8.3.1.\par
+\par
+\par
+==F==\par
+\par
+* [[C plus plus facet - a class representing a primitive aspect of a locale, such as a way of writing an integer or a character encoding. [[TC plus plus PL | TC++PL]] D.3.\par
+\par
+* [[C plus plus false - bool value; converts to 0. [[TC plus plus PL | TC++PL]] 4.2, D&E 11.7.2.\par
+\par
+* [[C plus plus fat interface - an interface with more member functions and friends than are logically necessary. [[TC plus plus PL | TC++PL]] 24.4.3.\par
+\par
+* [[C plus plus field - see bitfield.\par
+\par
+* [[C plus plus file - a sequence of bytes or words holding information in a computer. The term "file" is usually reserved to information placed on disk or elsewhere outside the main memory. The iostream part of the C++ standard library provides ifstream, ofstream, and fstream as abstraction for accessing files. [[TC plus plus PL | TC++PL]] 21.5.\par
+\par
+* [[C plus plus file stream - stream attached to a file. See also, fstream, ifstream, ofstream. [[TC plus plus PL | TC++PL]] 21.5.1.\par
+\par
+* [[C plus plus finally - a language construct supporting ad hoc cleanup in some languages. Similar, but not identical to C++'s catch(...). Use the "resource acquisition is initialization" technique instead.\par
+\par
+* [[C plus plus find() - standard library linear search algorithm for a value in a sequence. [[TC plus plus PL | TC++PL]] 18.5.2.\par
+\par
+* [[C plus plus find_if() - standard library linear search algorithm for an element meeting a search criterion in a sequence. [[TC plus plus PL | TC++PL]] 18.5.2.\par
+\par
+* [[C plus plus float - single-precision floating-point number. [[TC plus plus PL | TC++PL]] 4.5.\par
+\par
+* [[C plus plus floating-point literal - the source text representation of a floating point value. For example, 0.314e1. [[TC plus plus PL | TC++PL]] 4.5.1.\par
+\par
+* [[C plus plus floating-point type - a float, double, or long double. A floating-point number is typically represented as a mantissa and an exponent. [[TC plus plus PL | TC++PL]] 4.5.\par
+\par
+* [[C plus plus for-statement - iteration statement specifying an initializer, an iteration condition, a "next-iteration" operation, and a controlled statement. [[TC plus plus PL | TC++PL]] 6.3.3.\par
+\par
+* [[C plus plus free store - memory allocated by new; also called dynamic memory. Often standard library facilities, such as vector, can be used to avoid explicit use of free store. [[TC plus plus PL | TC++PL]] 6.2.6, 10.4.3, D&E 2.11.2, 11.4.2.\par
+\par
+* [[C plus plus free() - C standard deallocation function. Use delete instead.\par
+\par
+* [[C plus plus free-standing function - a function that is not a member function. Useful for decreasing coupling between representation and algorithm. [[TC plus plus PL | TC++PL]] 7, 18.\par
+\par
+* [[C plus plus friend - a function or class explicitly granted access to members of a class by that class. [[TC plus plus PL | TC++PL]] 11.5, C.11.4, D&E 2.10, 3.6.1-2.\par
+\par
+* [[C plus plus friend function - a function declared as friend in a class so that it has the same access as the class' members without having to be within the scope of the class. And, no, friends do not "violate encapsulation". [[TC plus plus PL | TC++PL]] 11.5, 11.2.3, C.11.4, D&E 2.10, 3.6.1.\par
+\par
+* [[C plus plus front-end - the parts of a compiler that perform lexical and syntax checking, type checking, and initial semantic checking of a translation unit. Typically all compiler error messages comes from the front-end. See also: back-end. D&E 3.3.\par
+\par
+* [[C plus plus front_inserter() - returns an iterator that can be used to add elements at the front of the container . [[TC plus plus PL | TC++PL]] 19.2.4.\par
+\par
+* [[C plus plus fstream - a file stream for input and output.\par
+\par
+* [[C plus plus function - a named sequence of statements that can be invoked/called given arguments and that might return a value. The type of the function includes the number and types of argument and the type of the value returned, if any. See also: function declaration, function body. [[TC plus plus PL | TC++PL]] 2.3, 7, D&E 2.6.\par
+\par
+* [[C plus plus function argument - an argument to a function.\par
+\par
+* [[C plus plus function body - the outermost block of a function. See also: try-block, function definition. [[TC plus plus PL | TC++PL]] 2.7, 13.\par
+\par
+* [[C plus plus function declaration - declaration of a function, including its name, argument types, and return type.\par
+\par
+* [[C plus plus function definition - function declaration including a function body.\par
+\par
+* [[C plus plus function member - see member function.\par
+\par
+* [[C plus plus function object - object with the application operator, operator()(), defined so that it can be called like a function. A function object is more general than a function because it can hold data and provide additional operations. Sometimes called a functor. Given current compiler technology, simple function objects inline better than pointers to functions, so that parameterization with function objects can be far more efficient than use of pointers to functions or virtual functions. See also: binder, adapter, inlining. Example. [[TC plus plus PL | TC++PL]] 18.4.\par
+\par
+* [[C plus plus function parameter - a parameter of a function.\par
+\par
+* [[C plus plus function prototype - C term for a function declaration that isn't also a function definition. D&E 2.6.\par
+\par
+* [[C plus plus function template - see template function.\par
+\par
+* [[C plus plus function try-block - try-block associated with the outmost block of a function, the function body. [[TC plus plus PL | TC++PL]] 3.7.2.\par
+\par
+* [[C plus plus functor - see function object.\par
+\par
+\par
+==G==\par
+* [[C plus plus G++ - see GNU C++.\par
+\par
+* [[C plus plus garbage collection - techniques for reclaiming unused memory without relying on user-supplied delete or free() commands. A permitted but not required technique for C++. Commercial and free garbage collectors exist for C++: See my C++ page. Use of classes that control their own storage, such as the standard library vector, string, and map, reduces the need for garbage collection. See also: resource acquisition is initialization, destructor. [[TC plus plus PL | TC++PL]] C.9.1. D&E 10.7.\par
+\par
+* [[C plus plus general-purpose programming language - (1) a programming language intended for use in a wide range of application areas without restrictions that make it totally unsuitable for traditional major uses of computers, such as mathematical computations, data processing, text processing, graphics, and communications. (2) a language that can do what at least as much as other languages called "general purpose" can do. See also: C++.\par
+\par
+* [[C plus plus generic programming - programming using templates to express algorithms and data structures parameterized by data types, operations, and polices. See also: polymorphism, multi-paradigm programming. [[TC plus plus PL | TC++PL]] 2.7, 24.4.1, D&E 15.11.2.\par
+\par
+* [[C plus plus get function - see >>.\par
+\par
+* [[C plus plus global data - data defined in the global scope. This is usually best avoided because a programmer can't easily know what code manipulates it and how. It is therefore a common source of errors. Global constants are usually ok.\par
+\par
+* [[C plus plus global scope - the scope containing all names defined outside any function, class, or namespace. Names in the global scope can be prefixed by ::. For example, ::main(). [[TC plus plus PL | TC++PL]] 2.9.4.\par
+\par
+* [[C plus plus glossary - "collection of glosses; lists and explanations of special words." - The Advanced Learners Dictionary of Current English. A pain to compile.\par
+\par
+* [[C plus plus GNU C++ - GNU's implementation of C++.\par
+\par
+* [[C plus plus goto - the infamous goto. Primarily useful in machine generated C++ code. [[TC plus plus PL | TC++PL]] 6.3.4.\par
+\par
+* [[C plus plus grammar - a systematic description of the syntax of a language. The C++ grammar is large and rather messy. Some of the syntactic complexity was inherited from C. [[TC plus plus PL | TC++PL]] A, D&E 2.8.\par
+\par
+* [[C plus plus GUI - Graphical User Interface. There are many C++ libraries and tools for building GUI-based applications, but no standard C++ GUI.\par
+\par
+* [[C plus plus handle - an object that controls access to another. Often, a handle also controls the acquisition and release of resources. A common use is for a handle to control access to a variably-sized data structure. See also: resource acquisition is initialization, vector, string, smart pointer. [[TC plus plus PL | TC++PL]] 25.7, D&E 11.5.2.\par
+\par
+* [[C plus plus handle class - a small class that provides interface to an object of another class. A handle is the standard way of providing variable sized data structures in C++. Examples are string and vector. [[TC plus plus PL | TC++PL]] 25.7.\par
+\par
+* [[C plus plus handler - see exception handler\par
+\par
+* [[C plus plus hash_map - hashed contained based on the standard library framework. Not (yet) part of the standard but very common in libraries based on the standard library. See also: map, vector, list. [[TC plus plus PL | TC++PL]] 17.6.\par
+\par
+* [[C plus plus header - see header file\par
+\par
+* [[C plus plus header file - file holding declarations used in more than one translation unit. Thus, a header file acts as an interface between separately compiled parts of a program. A header file often contains inline function definitions, const definitions, enumerations, and template definitions, but it cannot be #included from for than one source file if it contain non-inline function definitions or variable definitions. [[TC plus plus PL | TC++PL]] 2.4.1, 9.2.1. D&E 2.5, 11.3.3.\par
+\par
+* [[C plus plus hiding - see information hiding\par
+\par
+* [[C plus plus hierarchy - see class hierarchy.\par
+\par
+* [[C plus plus higher-order function - functions that produce other functions. C++ does not have general higher-order functions, but by returning function objects a function can efficiently emulate some techniques traditionally relying of higher-order functions. See also: binder. [[TC plus plus PL | TC++PL]] 18.4.4.\par
+\par
+* [[C plus plus history of C++ - The work on what became C++ started by Bjarne Stroustrup in AT&T Bell Labs in 1979. The first commercial release was in 1985. Standards work stared in 1990 leading to ratification of the ISO standard in 1998. [[TC plus plus PL | TC++PL]] 1.4. D&E Part 1.\par
+\par
+* [[C plus plus Hungarian notation - a coding convention that encodes type information in variable names. Its main use is to compensate for lack of type checking in weakly-typed or untyped languages. It is totally unsutable for C++ where it complicates maintenance and gets in the way of abstraction.\par
+\par
+* [[C plus plus hybrid language - derogative term for a programming language that supports more programming styles (paradigms) rather than just object-oriented programming.\par
+\par
+\par
+==I==\par
+\par
+* [[C plus plus I/O - see iostream\par
+\par
+* [[C plus plus IDE - Integrated (or Interactive) Development Enviornment. A software development environment (SDE) emphasizing a GUI interface centered around a source code editor. There are many IDEs for C++, but no standard SDE.\par
+\par
+* [[C plus plus identifier - see name.\par
+\par
+* [[C plus plus if-statement - statement selecting between two alternatives based on a condition. [[TC plus plus PL | TC++PL]] 6.3.2.\par
+\par
+* [[C plus plus ifstream - an file stream for input.\par
+\par
+* [[C plus plus implementation defined - an aspect of C++'s semantics that is defined for each implementation rather than specified in the standard for every implementation. An example is the size of an int (which must be at least 16 bits but can be longer). Avoid implementation defined behavior whenever possible. See also: undefined. [[TC plus plus PL | TC++PL]] C.2.\par
+\par
+* [[C plus plus implementation inheritance - see private base.\par
+\par
+* [[C plus plus implicit type conversion - conversion applied implicitly based on an expected type and the type of a value. See also, explicit type conversion, user-defined type conversion. [[TC plus plus PL | TC++PL]] 11.3.3, 11.3.5, 11.4, C.6, D&E 2.6.2, 3.6.1, 3.6.3, 11.2.\par
+\par
+* [[C plus plus in-class - lexically within the declaration of a class. [[TC plus plus PL | TC++PL]] 10.2.9, 10.4.6.2.\par
+\par
+* [[C plus plus include - see #include.\par
+\par
+* [[C plus plus incomplete type - type that allows an object to be copied, but not otherwise used. A pointer to an undeclared type is the typical example of an incomplete type.\par
+\par
+* [[C plus plus inequality operator - see !=.\par
+\par
+* [[C plus plus infix operator - a binary operator where the operator appears between the operands. For example, a+b.\par
+\par
+* [[C plus plus information hiding - placing information where it can be accessed only through a well-defined interface. See also: access control, abstract class, separate compilation. [[TC plus plus PL | TC++PL]] 2.4.\par
+\par
+* [[C plus plus inheritance - a derived class is said to inherit the members of its base classes. [[TC plus plus PL | TC++PL]] 2.6.2, 12.2, 23.4.3.1, D&E 3.5, 7.2, 12.\par
+\par
+* [[C plus plus initialization - giving an object an initial value. Initialization differs from assignment in that there is no previous value involved. Initialization is done by constructors.\par
+\par
+* [[C plus plus initializer list - comma-separated list of expressions enclosed in curly braces, e.g. \{ 1, 2, 3 \} used to initialize a struct or an array. [[TC plus plus PL | TC++PL]] 5.2.1, 5.7, 11.3.3.\par
+\par
+* [[C plus plus inline function - function declared inline using the inline keyword or by being a member function defined in-class. Compilers are encouraged to generate inline code rather than function calls for inline functions. Most benefits from inlining comes with very short functions. [[TC plus plus PL | TC++PL]] 7.1.1, 9.2, 10.2.9, D&E 2.4.1 .\par
+\par
+* [[C plus plus inlining - see inline function.\par
+\par
+* [[C plus plus input - see iostream.\par
+\par
+* [[C plus plus inserter - (1) an iostream << (put to) function. (2) an STL operation yielding an iterator to be used for adding elements to a containter. [[TC plus plus PL | TC++PL]] 19.2.4, 21.2, D&E 8.3.1. See also: extracter, back_inserter, front_inserter.\par
+\par
+* [[C plus plus instantiation - see template instantiation.\par
+\par
+* [[C plus plus int - basic signed integer type; its precision is implementation-defined, but an int has at least 32 bits. [[TC plus plus PL | TC++PL]] 2.3.1, 4.4.\par
+\par
+* [[C plus plus integer type - a short, int, or long. Standard C++ doesn't support long long. [[TC plus plus PL | TC++PL]] 4.4.\par
+\par
+* [[C plus plus integral type - a bool, character type, or integer type. Supports arithmetic and logical operations. [[TC plus plus PL | TC++PL]] 4.1.1.\par
+\par
+* [[C plus plus interface - a set of declarations that defines how a part of a program can be accessed. The public members and the friends of a class defines that class' interface for other code to use. A class without data members defines a pure interface. The protected members provide an additional interface for use by members of derived classes. See also: abstract class.\par
+\par
+* [[C plus plus interface function - A function that can access the representation of a class. See also: friend, member function, derived class, protected.\par
+\par
+* [[C plus plus interface inheritance - see abstract class, public base.\par
+\par
+* [[C plus plus invariant - a condition of the representation of an object (the object's state) that should hold each time an interface function is called; usually established by a constructor [[TC plus plus PL | TC++PL]] 24.3.7, E.3.5.\par
+\par
+* [[C plus plus iostream - (1) standard library flexible, extensible, type-safe input and output framework. (1) stream that can be used for both input and output. See also: file stream, string stream. [[TC plus plus PL | TC++PL]] 3.4, 3.6, 21, D&E 3.11.4.1, 8.3.1.\par
+\par
+* [[C plus plus ISO - the international standards organization. It defines and maintains the standards of the major non-proprietary programming languages, notably C++.\par
+\par
+* [[C plus plus ISO C - see C.\par
+\par
+* [[C plus plus ISO C++ - C++.\par
+\par
+* [[C plus plus istream - input stream type. [[TC plus plus PL | TC++PL]] 3.6, 21.3.\par
+\par
+* [[C plus plus istringstream - a string stream for input.\par
+\par
+* [[C plus plus iteration - traversal of data structure, directly or indirectly using an iteration-statement. See also: recursion. The standard library offer algorithms, such as copy() and find(), that can be effective alternatives to explicit iteration. [[TC plus plus PL | TC++PL]] 6.3.3. 18.\par
+\par
+* [[C plus plus iteration-statement - for-statement, while-statement, or do-statement.\par
+\par
+* [[C plus plus iterator - a standard library abstraction for objects referring to elements of a sequence. [[TC plus plus PL | TC++PL]] 3.8.1, 19.2-3.\par
+\par
+\par
+==K==\par
+\par
+* [[K&R C]] - C as defined by Kernighan and Ritchie.\par
+\par
+* [[Kernighan]] - [[Brian Kernighan]] is a co-author of [[[Kernighan & Ritchie]]: "[[The C programming Language]]".\par
+\par
+* [[C plus plus Koenig lookup - see argument-based lookup.\par
+\par
+\par
+==L==\par
+* [[C plus plus language extension - (1) relatively new feature that people haven't yet gotten used to. (2) proposed new feature. (3) feature provided by one or more implementations, but not adopted by the standard; the use of some such features implies lock-in to a particular compiler supplier.\par
+\par
+* [[C plus plus learning C++ - focus on concepts and techniques. You don't need to learn C first. See also "Learning Standard C++ as a New Language", available from my papers page. How do I start?. [[TC plus plus PL | TC++PL]] 1.2, 1.7, D&E 7.2.\par
+\par
+* [[C plus plus Library TR - technical report from the ISO C++ standards committee defining a set of new standard library components, including regular expression matching (regexp), hashedcontainers (ordered_map), and smart pointers. See my C++ page.\par
+\par
+* [[C plus plus line comment - comment started by // and terminated by end-of-line. [[TC plus plus PL | TC++PL]] 6.4, D&E 3.11.1.\par
+\par
+* [[C plus plus linkage - the process of merging code from separately compiled translation units into a program or part of a program. [[TC plus plus PL | TC++PL]] 9.\par
+\par
+* [[C plus plus linker - the part of a C++ implementation that merge the code generated from separately compiled translation units into a program or part of a program. [[TC plus plus PL | TC++PL]] 9.1, D&E 4.5, 11.3.\par
+\par
+* [[C plus plus Liskov Substitution Principle - design classes so that any derived class will be acceptable where its base class is. C++ public bases enforce that as far as the interface provided by the base class. [[TC plus plus PL | TC++PL]] 24.3.4, D&E 2.10.\par
+\par
+* [[C plus plus list - standard library linked container. \'13See also: vector, map. [[TC plus plus PL | TC++PL]] 3.7.3, 17.2.2.\par
+\par
+* [[C plus plus literal - notation for values of bool, character types, integer types, or floating-point types. See also: enumerators. [[TC plus plus PL | TC++PL]] 4.2, 4.3.1, 4.4.1, 4.5.1, 5.2.2, D&E 11.2.1.\par
+\par
+* [[C plus plus local class - class defined within a function. Most often, the use of a local class is a sign that a function is too large. Beware that a local class cannot be a valid template argument.\par
+\par
+* [[C plus plus local function - function defined within a function. Not supported by C++. Most often, the use of a local function is a sign that a function is too large.\par
+\par
+* [[C plus plus locale - standard library class for representing culture dependencies relating to input and output, such as floating-point output formats, character sets, and collating rules. A locale is a container of facets. [[TC plus plus PL | TC++PL]] 21.1, D.\par
+\par
+* [[C plus plus long double - extended-precision floating-point number. [[TC plus plus PL | TC++PL]] 4.5.\par
+\par
+* [[C plus plus long int - integer of a size greater than or equal to the size of an int. [[TC plus plus PL | TC++PL]] 4.4.\par
+\par
+* [[C plus plus loop - a statement that expresses the notion of doing something zero or more times, such as a for-statement and a while-statement.\par
+\par
+* [[C plus plus LSP - see Liskov Substitution Principle.\par
+\par
+* [[C plus plus lvalue - an expression that may appear on the left-hand side of an assignment; for example, v[7] if v is an array or a vector. An lvalue is modifiable unless it is const. [[TC plus plus PL | TC++PL]] 4.9.6, D&E 3.7.1.\par
+\par
+\par
+==M==\par
+* [[C plus plus macro - facility for character substitution; doesn't obey C++ scope or type rules. C++ provides alternatives to most uses of macros; see template, inline, const, and namespace. Don't use macros unless you absolutely have to. [[TC plus plus PL | TC++PL]] 7.8, D&E 2.9.2, 4.4, 18.\par
+\par
+main() - the function called by the system to start a C++ program. [[TC plus plus PL | TC++PL]] 3.2, 6.1.7, 9.4 .\par
+\par
+maintenance - work on a program after its initial release. Typical maintenance activities include bug fixing, minor feature enhancements, porting to new systems, improvements of error handling, modification to use different natural languages, improvements to documentation, and performance tuning. Maintenance typically consumes more than 80% of the total effort and cost expended on a program.\par
+\par
+malloc() - C standard allocation function. Use new or vector instead.\par
+\par
+map - standard library associative container, based on "less than" ordering. See also: hash_map, vector, list. [[TC plus plus PL | TC++PL]] 3.7.4, 17.4.1.\par
+\par
+Max Munch - (1) mythical participant in the C++ standards process. (2) the rule that says that while parsing C++ always chooses the lexically or syntactically longest alternative. Thus ++ is the increment operation, not two additions, and long int is a single integer type rather than the long integer followed by an int. Cross references in this glossary follow this rule.\par
+\par
+member - type, variable, constant, or function declared in the scope of a class. [[TC plus plus PL | TC++PL]] 5.7, 10.2, D&E 2.3, 2.5.2, 2.11.\par
+\par
+member class - a class that is a member of another; also called a nested class. [[TC plus plus PL | TC++PL]] 11.12, D&E 3.12, 13.5.\par
+\par
+member constant - const or enumeration declared as a member. If initialized in-class, such a constant can be used in constant expressions within the class. [[TC plus plus PL | TC++PL]] 10.4.6.2.\par
+\par
+member data - see data member.\par
+\par
+member function - a function declared in the scope of a class. A member function that is not a static member function must be called for an object of its class. [[TC plus plus PL | TC++PL]] 10.2.1, D&E 2.3, 3.5.\par
+\par
+member initializer - initializer for a member specified in the constructor for its class. [[TC plus plus PL | TC++PL]] 10.4.6, 12.2.2, D&E 12.9.\par
+\par
+member type - member class, member enumeration, or member typedef.\par
+\par
+memberwise copy - copying a class object by copying each of its members in turn, using proper copy constructors or copy assignments. That's the default meaning of copy. [[TC plus plus PL | TC++PL]] 10.4.4.1, 10.4.6.3, D&E 11.4.4.\par
+\par
+memory - static memory, stack, or free store.\par
+\par
+memory management - a way of allocating and freeing memory. In C++ memory is either static, allocated on the stack, or allocated on the free store. When people talk about memory management, they usually think of free store or even specifically about garbage collection. Memory can often be effectively managed through standard library containers, such as vector or string, or through general resource management techniques. See also: auto_ptr, constructor, destructor, resource acquisition is initialization. [[TC plus plus PL | TC++PL]] C.9, D&E 3.9, 10.\par
+\par
+mem_fun() - an adapter that allows a member function to be used as an argument to a standard algorithm requiring a free-standing function. [[TC plus plus PL | TC++PL]] 18.4.4.2.\par
+\par
+method - see virtual member function.\par
+\par
+Microsoft C++ - see Visual C++\par
+\par
+modifiable lvalue - lvalue that is not const. [[TC plus plus PL | TC++PL]] 4.9.6.\par
+\par
+most-derived type - the type used to create an object (before any conversions). See also: dynamic type, static type.\par
+\par
+multi-method - a virtual function that selects the function to be called based on more than one operand. See also: multiple dispatch. D&E 13.8.\par
+\par
+multi-paradigm design - design focussed on applying the various paradigms to their best advantage. See also: multi-paradigm programming.\par
+\par
+multi-paradigm programming - programming applying different styles of programming, such as object-oriented programming and generic programming where they are most appropriate. In particular, programming using combinations of different programming styles (paradigms) to express code more clearly than is possible using only one style. See also: C++.\par
+\par
+multimap - map that allows multiple values for a key. [[TC plus plus PL | TC++PL]] 17.4.2.\par
+\par
+multiple dispatch - the generalization of double dispatch to more operands. See also: single dispatch.\par
+\par
+multiple inheritance - the use of more than one immediate base class for a derived class. One typical use is to have one base define an interface and another providing help for the implementation. [[TC plus plus PL | TC++PL]] 12.2.4, 12.4, 15.2.5, D&E 12.\par
+\par
+mutable - an attribute of a member that makes it possible to change its value even if its object is declared to be const [[TC plus plus PL | TC++PL]] 10.2.7.2, D&E 13.3.3.\par
+\par
+name - sequence of letters and digits started by a letter, used to identify ("name") user-defined entities in program text. An underscore is considered a letter. Names are case sensitive. The standard imposes no upper limit on the length of names. [[TC plus plus PL | TC++PL]] 4.9.3.\par
+\par
+namespace - a named scope. [[TC plus plus PL | TC++PL]] 2.5.1, 8.1, C.10. D&E 17.\par
+\par
+namespace alias - alternative name for a namespace; often a shorter name. [[TC plus plus PL | TC++PL]] 8.2.7, D&E 17.4.3.\par
+\par
+NCITS - National Committee for Information Technology Standards. The part of ANSI that deals with programming language standards, notably C++, and sells copies of the C++ standard. Formerly known as X3.\par
+\par
+nested class - see member class.\par
+\par
+nested function - see local function.\par
+\par
+new - object creation operator. See also: constructor, placement new, operator new(), resource management, memory management, garbage collection. [[TC plus plus PL | TC++PL]] 6.2.6, 19.4.5, D&E 2.3, 10.2.\par
+\par
+new-style cast - dynamic_cast, static_cast, const_cast, or reinterpret_cast. D&E 14.3.\par
+\par
+new_handler - a (possibly user-defined) function called by new if operator new() fails to allocate sufficient memory. See also: std::bad_alloc exception. [[TC plus plus PL | TC++PL]] 6.2.6.2, 14.4.5., 19.4.5.\par
+\par
+non-static member - member of a class that is not declared to be a static member. An object of a class has its own space for each non-static data member.\par
+\par
+not - synonym for !, the logical negation operator [[TC plus plus PL | TC++PL]] C.3.1.\par
+\par
+nothrow guarantee - the guarantee that an operation will not throw an exception. See also exception safety, basic guarantee, and strong guarantee. [[TC plus plus PL | TC++PL]] E.2.\par
+\par
+NULL - zero. 0. 0 is an integer. 0 can be implicitly converted to every pointer type. See also: nullptr. [[TC plus plus PL | TC++PL]] 5.1.1, D&E 11.2.3.\par
+\par
+nullptr - C++0x keyword for the null pointer. It is not an integer. It can be assigned only to pointers.\par
+\par
+object - (1) a contiguous region of memory holding a value of some type. (2) a named or unnamed variable of some type; an object of a type with a constructor is not considered an object before the constructor has completed and is no longer considered an object once a destructor has started executing for it. Objects can be allocated in static memory, on the stack, on on the free store. [[TC plus plus PL | TC++PL]] 4.9.6, 10.4, 10.4.3, D&E 2.3, 3.9.\par
+\par
+object code - see object file.\par
+\par
+object file - the result of compiling a source file. See also: compiler.\par
+\par
+object-oriented design - design focussed on objects and object-oriented programming. [[TC plus plus PL | TC++PL]] 23.2, D&E 7.2.\par
+\par
+object-oriented programming - programming using class hierarchies and virtual functions to allow manipulation of objects of a variety of types through well-defined interfaces and allow a program to be extended incrementally through derivation. See also: polymorphism, data abstraction. [[TC plus plus PL | TC++PL]] 2.6, 12, D&E 3.5, 7.2.\par
+\par
+object-oriented programming language - a programming language designed to support or enforce some notion of object-oriented programming. C++ supports OOP and other effective forms of programming, but does not try to enforce a single style of programming. See also: generic programming, multi-paradigm programming, hybrid language.\par
+\par
+ODR - see one definition rule\par
+\par
+ofstream - an file stream for output.\par
+\par
+old-style cast - see C-style cast.\par
+\par
+one definition rule - there must be exactly one definition of each entity in a program. If more than one definition appears, say because of replication through header files, the meaning of all such duplicates must be identical. [[TC plus plus PL | TC++PL]] 9.2.3, D&E 2.5, 15.10.2.\par
+\par
+OOD - see object-oriented design.\par
+\par
+OOP - see object-oriented programming.\par
+\par
+OOPL - see object-oriented programming language.\par
+\par
+operator - conventional notation for built-in operation, such as +, *, and &. A programmer can define meanings for operators for user-defined types. See also: operator overloading, unary operator, binary operator, ternary operator, prefix operator, postfix operator. [[TC plus plus PL | TC++PL]] 6.2.\par
+\par
+operator delete() - deallocation function used by delete#. Possibly defined by user. [[TC plus plus PL | TC++PL]] 6.2.6.2, 19.4.5. See also: operator new().\par
+\par
+operator delete[]() - deallocation function used by delete#. Possibly defined by user. [[TC plus plus PL | TC++PL]] 6.2.6.2, 19.4.5. See also: operator new[]().\par
+\par
+operator function - function defining one of the standard operators; e.g. operator+(). See also: operator, operator overloading, conversion operator.\par
+\par
+operator new() - allocation function used by new. Possibly defined by user. [[TC plus plus PL | TC++PL]] 6.2.6.2, 19.4.5. See also: operator delete().\par
+\par
+operator new[]() - allocation function used by new. Possibly defined by user. [[TC plus plus PL | TC++PL]] 6.2.6.2, 19.4.5. See also: operator delete[]().\par
+\par
+operator overloading - having more than one operator with the same name in the same scope. Built-in operators, such as + and *, are overloaded for types such as int and float. Users can define their own additional meanings for user-defined types. It is not possible to define new operators or to give new meanings to operators for built-in types. The compiler picks the operator to be used based on argument types based overload resolution rules. See also: overload resolution. [[TC plus plus PL | TC++PL]] 6.2, D&E 3.6, 11.7.1.\par
+\par
+optimizer - a part of a compiler that eliminates redundant operations from code and adjusts code to perform better on a given computer. See also, front-end, back-end, code generator. D&E 3.3.3.\par
+\par
+or - synonym for ||, the logical or operator [[TC plus plus PL | TC++PL]] C.3.1.\par
+\par
+order of construction - a class object is constructed from the bottom up: first bases in declaration order, then members in declaration order, and finally the body of the constructor itself. [[TC plus plus PL | TC++PL]] 10.4.6, 12.2.2, 15.2.4.1, 15.4.3. D&E 2.11.1, 13.2.4.2.\par
+\par
+order of destruction - a class object is destroyed in the reverse order of construction. See also: destructor.\par
+\par
+ostream - output stream type. [[TC plus plus PL | TC++PL]] 3.4, 21.2.\par
+\par
+ostringstream - a string stream for output.\par
+\par
+output - see iostream.\par
+\par
+out_of_range - standard exception thrown by vector if an argument to at() is out of range. [[TC plus plus PL | TC++PL]] 16.3.3.\par
+\par
+overload - see overloading.\par
+\par
+overload resolution - a set of rules for selecting the best version of an operator based on the types of its operands. A set of rules for selecting the best version of an overloaded function based on the types of its arguments. The intent of the overload resolution rules is to reject ambiguous uses and to select the simplest function or operator for each use. [[TC plus plus PL | TC++PL]] 6.2, D&E 11.2.\par
+\par
+overloaded function - see overloading.\par
+\par
+overloaded operator - see operator overloading\par
+\par
+overloading - having more than one function with the same name in the same scope or having more than one operator with the same name in the same scope. It is not possible to overload across different scopes. See also: using-declaration. [[TC plus plus PL | TC++PL]] 6.2, D&E 3.6, 11.2.\par
+\par
+override - see overriding.\par
+\par
+overriding - declaring a function in a derived class with the same name and a matching type as a virtual function in a base class. The argument types must match exactly. The return types must match exactly or be co-variant. The overriding function will be invoked when the virtual function is called. [[TC plus plus PL | TC++PL]] 15.6.2, 6.2, D&E 3.5.2-3, 13.7.\par
+\par
+paradigm - pretentious and overused term for a way of thinking. Often used with the erroneous assumption that "paradigms" are mutually exclusive, and often assuming that one paradigm is inherently superior to all others. Derived from Kuhn's theory of science. [[TC plus plus PL | TC++PL]] 2.2.\par
+\par
+parameter - a variable declared in a function or templates for representing an argument. Also called a formal argument. Similarly, for templates.\par
+\par
+partial specialization - a template used (only) for the subset of its template parameters that matches a specialization pattern. [[TC plus plus PL | TC++PL]] 13.5.\par
+\par
+Performance TR - technical report from the ISO C++ standards committee discussing issues related to perfoemance, especially as concerns embedded systems programming and hardware access. See my C++ page.\par
+\par
+placement delete - See explicit call of destructor.\par
+\par
+placement new - a version of the new operator where the user can add arguments to guide allocation. The simplest form, where the object is placed in a specific location, is supported by the standard library. Example. For example, placement new is used in the implementation of standard library containers. See also: explicit call of destructor. [[TC plus plus PL | TC++PL]] 10.4.11, E.3.1, D&E 10.4.\par
+\par
+POD - "Plain Old Data" - (roughly) a class that doesn't contain data members that would be illegal in C. A POD can therefore be used for data that needs to be share with C functions. A POD can have non-virtual member functions.\par
+\par
+pointer - an object holding an address or 0. [[TC plus plus PL | TC++PL]] 2.3.3, 5.1, D&E 9.2.2.1, 11.4.4.\par
+\par
+policy object - an object used to specify guide decisions (e.g. the meaning of "less than") or implementation details (e.g. how to access memory) for an object or an algorithm. See also trait, facet. [[TC plus plus PL | TC++PL]] 13.4, 24.4.1.\par
+\par
+polymorphism - providing a single interface to entities of different types. virtual functions provide dynamic (run-time) polymorphism through an interface provided by a base class. Overloaded functions and templates provide static (compile-time) polymorphism. [[TC plus plus PL | TC++PL]] 12.2.6, 13.6.1, D&E 2.9.\par
+\par
+postfix operator - a unary operator that appears after its operand. For example var++.\par
+\par
+prefix operator - a unary operato that appears before its operand. For example, &var.\par
+\par
+preprocessor - the part of a C++ implementation that removes comments, performs macro substitution and #includes. Avoid using the preprocessor whenever possible. See also: macro, #include, inline, const, template, namespace. [[TC plus plus PL | TC++PL]] 7.8, 9.2.1, D&E 18.\par
+\par
+priority_queue - standard library queue where a priority determines the order in which an element reaches the head of the queue. [[TC plus plus PL | TC++PL]] 17.3.3.\par
+\par
+private - access control keyword. See private member, private base.\par
+\par
+private base - a base class declared private in a derived class, so that the base's public members are accessible only from that derived class. [[TC plus plus PL | TC++PL]] 15.3.2, D&E 2.10.\par
+\par
+private member - a member accessible only from its own class. [[TC plus plus PL | TC++PL]] 2.5.2, 10.2.2, 15.3, D&E 2.10.\par
+\par
+procedural programming - programming using procedures (functions) and data structures (structs). See also: data abstraction, object-oriented programming, generic programming, multi-paradigm programming. [[TC plus plus PL | TC++PL]] 2.3.\par
+\par
+procedure - see function.\par
+\par
+program - a set of translation units complete enough to be made executable by a linker. [[TC plus plus PL | TC++PL]] 9.4.\par
+\par
+programming language - artificial language for expressing concepts and general algorithms in a way that lends itself to solving problems using computers. There do not appear to be a general consensus on what a programming language is or should be. [[TC plus plus PL | TC++PL]] 1.3.2, 2.1-2, D&E page 7.\par
+\par
+prohibiting operations - operations can be rendered inaccessible by declaring them private; in this way default operations, such as construction, destruction, and copying can be disallowed for a class. [[TC plus plus PL | TC++PL]] 11.2.2, D&E 11.4.\par
+\par
+proprietary language - language owned by an organization that is not an official standards organization, such as ISO; usually manipulated by its owner for commercial advantage.\par
+\par
+protected - access control keyword. See protected member, protected base.\par
+\par
+protected base - a base class declared protected in a derived class, so that the base's public and protected members are accessible only in that derived class and classes derived from that. [[TC plus plus PL | TC++PL]] 15.3.2, D&E 13.9.\par
+\par
+protected member - a member accessible only from classes derived from its class. [[TC plus plus PL | TC++PL]] 15.3.1, D&E 13.9.\par
+\par
+protection - see encapsulation.\par
+\par
+protection model - the mechanisms for access control. See public, private, protected, friend. [[TC plus plus PL | TC++PL]] 15.3, D&E 2.10.\par
+\par
+public - access control keyword. See public member, public base.\par
+\par
+public base - a base class declared public in a derived class, so that the base's public members are accessible to the users of that derived class. [[TC plus plus PL | TC++PL]] 15.3.2, D&E 2.3.\par
+\par
+public member - a member accessible to all users of a class. [[TC plus plus PL | TC++PL]] 2.5.2, 10.2.2, 15.3, D&E 2.10.\par
+\par
+pure object-oriented language - programming language claiming to support only object-oriented programming. C++ is designed to support several programming paradigms, including traditional C-style programming, data abstraction, object-oriented programming, and generic programming. For a longer explanation, read Why C++ isn't just an object-oriented programming language. See also: hybrid language.\par
+\par
+pure virtual function - virtual function that must be overridden in a derived class. Indicated by the curious =0 syntax. A pure virtual function can be defined in the class where it is declared pure, but needn't be and usually isn't. A class with at least one pure virtual function is an abstract class. [[TC plus plus PL | TC++PL]] 12.3. D&E 13.2.1.\par
+\par
+push_back() - member function that adds an element at the end of a standard container, such as vector, thereby increasing the container's size by one. Example. [[TC plus plus PL | TC++PL]] 3.7.3, 16.3.5, E.3.4.\par
+\par
+put function - see <<.\par
+\par
+qualified name - name qualified by the name of its enclosing class or namespace using the scope resolution operator ::. For example, std::vector or ::main. [[TC plus plus PL | TC++PL]] 4.9.3, 8.2.1, 10.2.4, 15.2.1, 15.2.2, D&E 3.11.3.\par
+\par
+queue - standard library first-in-first-out sequence. [[TC plus plus PL | TC++PL]] 17.3.2.\par
+\par
+RAII - see resource acquisition is initialization.\par
+\par
+random number generator - function or function object producing a series of pseudorandom numbers according to some distribution. [[TC plus plus PL | TC++PL]] 22.7.\par
+\par
+raw memory - see uninitialized memory.\par
+\par
+realloc() - C standard allocation function. Use vector and push_back() instead.\par
+\par
+recursion - a function calling itself, hopefully with different arguments so that the recursion eventually ends with a call for which the function doesn't call itself. See also: iteration. [[TC plus plus PL | TC++PL]] 7.1.1.\par
+\par
+reference - an alternative name for an object or a function. See also: operator overloading, call-by-reference. [[TC plus plus PL | TC++PL]] 5.4.1, D&E 3.7.\par
+\par
+regression testing - systematically checking that a new version of a program doesn't break correct uses of a previous version of the program.\par
+\par
+reinterpret_cast - a type conversion operation that reinterprets the raw memory of an object as a value of another type. The result of a reinterpret_cast can only be portably used after being converted back into its original type. Use only as a last resort. See also: cast. [[TC plus plus PL | TC++PL]] 6.2.7, D&E 14.3.3.\par
+\par
+resource - any entity that a program acquires and releases. Typical examples are free store, file handles, threads, sockets. See also: resource acquisition is initialization, exception safety, basic guarantee, resource management. [[TC plus plus PL | TC++PL]] 14.4, E.2-3 D&E 16.5.\par
+\par
+resource acquisition is initialization - A simple technique for handling resources in programs using exceptions. One of the keys to exception safety. Example. [[TC plus plus PL | TC++PL]] 14.4, E.3 D&E 16.5.\par
+\par
+resource leak - programming error causing a resource not to be released. See also: resource acquisition is initialization, basic guarantee. [[TC plus plus PL | TC++PL]] 14.4, E.2-3 D&E 16.5.\par
+\par
+resource management - a way of acquiring and releasing a resource, such as memory, thread, or file. See also: resource acquisition is initialization, auto_ptr, vector. [[TC plus plus PL | TC++PL]] 14.4, D&E 10.4.\par
+\par
+resumption semantics - In some languages, but not C++, an exception handler can respond by telling the thrower to resume (``just carry on as if the problem hadn't happened"). This looks like a good idea in some cases, but in general leads to contorted code because of unfortunate dependencies between separate levels of abstraction. See also: termination semantics. [[TC plus plus PL | TC++PL]] 14.4.5, D&E 16.6.\par
+\par
+return type relaxation - Allowing a virtual function returning a B* or a B& to be overridden by a function with a return type D* or D&, provided B is a public base of D. See also: overriding. [[TC plus plus PL | TC++PL]] 15.6.2, D&E 13.7.\par
+\par
+reverse iterator - iterator for iterating through a sequence in reverse order. [[TC plus plus PL | TC++PL]] 19.2.5.\par
+\par
+Ritchie - Dennis Ritchie is the designer and original implementer of C. Co-author of Kernighan & Ritchie: "The C programming Language".\par
+\par
+RTFM - "Read The Manual" (The 'F' is silent). Usually a very good idea.\par
+\par
+RTTI - see Run Time Type Information.\par
+\par
+run time type information - information about a type available at run time through operations on an object of that type. See also: dynamic_cast, typeid(), and type_info. [[TC plus plus PL | TC++PL]] 15.4, D&E 14.2.\par
+\par
+rvalue - an expression that may appear on the right-hand side of an assignment, but not of the left-hand side; for example, 7. D&E 3.7.1.\par
+\par
+scope - a region of source text delimited by curly braces: \{ ... \}, a list of function or template parameters, or all of a translation unit outside other scopes. See also: block, namespace, global scope. [[TC plus plus PL | TC++PL]] 2.9.4.\par
+\par
+SDE - Software Development Environment. An environment of editors, compilers, tools, libraries, etc. used by a programmer to produce software. There are many SDEs for C++, but no standard SDE.\par
+\par
+selection-statement - if-statement or switch-statement. [[TC plus plus PL | TC++PL]] 6.3.2.\par
+\par
+self - see this.\par
+\par
+semantics - the rules specifying the meaning of a syntactically correct construct of a program. For example, specifying the actions taken to perform a for-statement or an object definition.\par
+\par
+separate compilation - the practice of compiling parts of a program, called translation units, separately and then later linking the results together using a linker. This is essential for larger programs. See also: linkage, header file, one definition rule. [[TC plus plus PL | TC++PL]] 2.4.1, 9.1. D&E 2.5.\par
+\par
+separately compiled - see separate compilation.\par
+\par
+sequence adapter - a class that provides a modified interface to another. For example, a standard library stack is an adapter for a more flexible data structure such as a vector. See also: adapter, stack, queue, priority_queue. [[TC plus plus PL | TC++PL]] 17.3.\par
+\par
+set - standard library associative container\par
+\par
+short - integer of a size less than or equal to the size of an int. [[TC plus plus PL | TC++PL]] 4.4.\par
+\par
+sibling class - two classes are siblings if a class is (directly or indirectly) derived from them both and one is not derived from the other. Note that this is a rather inclusive definition of "sibling class" in that is does not require that the siblings have the same immediate derived class (I didn't want to introduce a notion of "cousin classes"). See also: dynamic_cast, crosscast.\par
+\par
+signature - the set of parameter types for a function; that is, the function's type ignoring its return type. This is a confusingly specialized definition compared to other programming languages where "signature" means "function type".\par
+\par
+Simula - ancestor of C++ designed by Ole-Johan Dahl and Kristen Nygaard; the source of the C++ class concept. [[TC plus plus PL | TC++PL]] 1.4, 2.6.2, D&E 1.1, 3.1.\par
+\par
+single dispatch - the technique of choosing the member function to be invoked based on the object used in the call. See also: double dispatch.\par
+\par
+size of an object - the number of bytes required to represent an object. See also sizeof, alignment. [[TC plus plus PL | TC++PL]] 4.6.\par
+\par
+sizeof - operator yielding the size of an object.\par
+\par
+smart pointer - user-defined type providing operators like a function, such as * and ++, and with a semantics similar to pointers. See also: iterator. Sometimes smart a pointer is called a handle. [[TC plus plus PL | TC++PL]] 11.10-11, 13.6.3.1, 19.3, 25.7, D&E 11.5.1\par
+\par
+software - a collection of programs\par
+\par
+sort() - standard library algorithm for sorting a random access sequence, such as a vector or an array. Example comparing sort() to qsort(). [[TC plus plus PL | TC++PL]] 18.7.1.\par
+\par
+source file - .c file or header.\par
+\par
+specialization - a class or function generated from a template by supplying a complete set of template arguments. [[TC plus plus PL | TC++PL]] 13.2.2, 13.5, D&E 15.10.3.\par
+\par
+stack - (1) memory used to hold local variables for a function. (2) standard library first-in-last-out sequence. [[TC plus plus PL | TC++PL]] 10.4.3, 17.3.1, D&E 2.3, 3.9.\par
+\par
+Standard C++ - C++ as defined by ISO.\par
+\par
+standard header - header for standard library facility. Included using the "#include< ... >" syntax. [[TC plus plus PL | TC++PL]] 9.2.2, 16.1.2.\par
+\par
+standard library - The library defined in the C++ standard. Contains strings, stream I/O, a framework of containers and algorithms, support for numerical computation, support for internationalization, the C standard library, and some language support facilities. See also: complex, valarray, locale. [[TC plus plus PL | TC++PL]] 16-22, D, E.\par
+\par
+standards committee - see C++ standards committees.\par
+\par
+statement - the basic unit controlling the execution flow in a function, such as if-statement, while-statement, do-statement, switch-statement, expression statement, and declaration. [[TC plus plus PL | TC++PL]] 6.3.\par
+\par
+static - (1) keyword used to declare a class member static; meaning allocated in static memory. For a member function, this implies that there is no this pointer. (2) keyword used to specify that a local variable should be allocated in static memory. (3) deprecated: keyword used to specify that a global name should not be visible from other translation units. [[TC plus plus PL | TC++PL]] 7.1.2, 10.2.4, 10.4.8-9.\par
+\par
+static member - member of a class for which there is only one copy for the whole program rather than one per object. [[TC plus plus PL | TC++PL]] 10.2.4, D&E 13.4.\par
+\par
+static member function - a member function that need not be called for an object of the class. [[TC plus plus PL | TC++PL]] 10.2.4, D&E 13.4.\par
+\par
+static memory - memory allocated by the linker. [[TC plus plus PL | TC++PL]] 10.4.3, D&E 2.3, 2.11.1, 3.9, 11.4.2.\par
+\par
+static type - the type of an object as known to the compiler based on its declaration. See also: dynamic type.\par
+\par
+static type safety - type safety enforced before a program starts executing (at compile time or at static link time).\par
+\par
+static variable - variable allocated in static memory. [[TC plus plus PL | TC++PL]] 7.1.2, 10.2.4, 10.4.3, D&E 3.9.\par
+\par
+static_cast - a type conversion operation that converts between related types, such as pointer types within a class hierarchy and between enumerations and integral types. See also: cast, dynamic_cast. [[TC plus plus PL | TC++PL]] 6.2.7, 15.4.2.1, D&E 14.3.2.\par
+\par
+Stepanov - Alex Stepanov is the original designer and implementer of the STL. D&E 11.15.2.\par
+\par
+STL - the "Standard Template Library" by Alex Stepanov, which became the basis for the containers, algorithms, and iterators part of the ISO C++ standard library. [[TC plus plus PL | TC++PL]] 15-19.\par
+\par
+strcmp() - a C-style standard library function for comparing C-style strings.\par
+\par
+stream - see iostream.\par
+\par
+stream I/O - see iostream.\par
+\par
+string - standard-library type representing a sequence of characters, support by convenient operators, such as == and +=. The general form of of strings, basic_string, supports strings of different kinds of characters. [[TC plus plus PL | TC++PL]] 3.5, 20.\par
+\par
+string stream - stream attached to a string. See also, stringstream, istringstream, ostringstream. [[TC plus plus PL | TC++PL]] 21.5.3.\par
+\par
+stringstream - a string stream for input and output.\par
+\par
+strong guarantee - the guarantee that an exception thrown by an operation leaves every object in the state in which it was before the start of the operation. Builds on the basic guarantee. See also exception safety, nothrow guarantee, and basic guarantee. [[TC plus plus PL | TC++PL]] E.2.\par
+\par
+Stroustrup - see Bjarne Stroustrup.\par
+\par
+strstream - deprecated ancestor of stringstream.\par
+\par
+struct - class with members public by default. Most often used for data structures without member functions or class invariants, as in C-style programming. [[TC plus plus PL | TC++PL]] 5.7, 10.2.8, D&E 3.5.1.\par
+\par
+subclass - a derived class.\par
+\par
+subtype - see derived class. See also: public base.\par
+\par
+suffix operator - a postfix operator.\par
+\par
+superclass - a base class.\par
+\par
+switch-statement - statement selecting among many alternatives based on an integer value. [[TC plus plus PL | TC++PL]] 6.3.2.\par
+\par
+syntax - the set of gramatical rules specifying how the text of a program must be composed. For example, specifying the form of a declaration or the form of a for-statement.\par
+\par
+[[TC plus plus PL | TC++PL]] - Bjarne Stroustrup: The C++ Programming Language (Special Edition). Addison Wesley. 2000.\par
+\par
+template - class or function parameterized by a set of types, values, or templates. See also template instantiation, specialization, template class, template function. [[TC plus plus PL | TC++PL]] 2.7, 13, D&E 15.\par
+\par
+template argument - an argument to a template.\par
+\par
+template argument constraint - see constraint.\par
+\par
+template class - class parameterized by types, values, or templates. The template arguments necessary to identify the class to be generated for the class template must be provided where a template class is used. For example "vector<int> v;" generates a vector of ints from the vector template. See also template. [[TC plus plus PL | TC++PL]] 13.2, D&E 15.3.\par
+\par
+template definition - declaration of a template class or of a template function including a function body.\par
+\par
+template function - function parameterized by types, values, or templates. The function to be generated from a template function can usually be deduced from the function arguments in a call. For example, "sort(b,e)" generates "sort<vector::iterator>(b,e)" from the sort() template function if b and e are standard library vector iterators. If a template argument cannot be deduced, it must be provided through explicit qualification. See also template. [[TC plus plus PL | TC++PL]] 13,3, D&E 15.6.\par
+\par
+template instantiation - the process of creating a specialization from a template. [[TC plus plus PL | TC++PL]] 13.2.2, D&E 15.10.\par
+\par
+template parameter - a parameter of a template.\par
+\par
+terminate() - If an exception is thrown but no handler is found, terminate() is called. By default, terminate() terminates the program. If program termination is unacceptable, a user can provide an alternative terminate() function. If you are worried about uncaught exceptions, make the body of main() a try-block. [[TC plus plus PL | TC++PL]] 14.7.\par
+\par
+termination semantics - a somewhat ominous terminology for the idea that throwing an exception "terminates" an operation and returns through the function call chain to a handler. The handler can initiate any error handling it likes, including calling the function that caused the exception again (presumably after fixing the problem that caused the problem). What a handler can't do is simply tell the thrower to just carry on; by the time the handler is invoked we have returned from the block/function that threw and all blocks/functions that led to it from the handler's try-block. See also: resumption semantics. [[TC plus plus PL | TC++PL]] 14.4.5, D&E 16.6.\par
+\par
+ternary operator - an operator taking three operands, such as ?:.\par
+\par
+testing - systematically verifying that a program meets its specification and systematically searching for error.\par
+\par
+this - pointer to the object for which a non-static member function is called. [[TC plus plus PL | TC++PL]] 10.2.7, D&E 2.5.2.\par
+\par
+throw - operation for interrupting the normal flow of control and returning to an appropriate exception handler identifyed by the type of the exception throw. See also: catch, exception handling. [[TC plus plus PL | TC++PL]] 8.3.1, 14.3, D&E 16.3.\par
+\par
+trait - a small policy object, typically used to describe aspects of a type. For example, iterator_trait specifies the types resulting from operations on an iterator T. [[TC plus plus PL | TC++PL]] 19.2.2.\par
+\par
+translation unit - a part of a program that can be separately compiled. [[TC plus plus PL | TC++PL]] 9.1.\par
+\par
+trigraph - alternative representation for C++ representation characters that doesn't exist in every national character set, such as \{, \}, [, ], and #: ??<, ??>, ??(, ??), and ??=. [[TC plus plus PL | TC++PL]] C.3.1.\par
+\par
+true - bool value; converts to 1. [[TC plus plus PL | TC++PL]] 4.2, D&E 11.7.2.\par
+\par
+try - keyword used to start a try-block.\par
+\par
+try-block - a block, prefixed by the keyword try, specifying handlers for exceptions. See also: catch, exception handling. [[TC plus plus PL | TC++PL]] 8.3.1,14.3, D&E 16.3.\par
+\par
+two-phase lookup - a somewhat complicated mechanism used in compilation of templates. Names that do not depend on a template parameter are looked up (and bound) early, i.e., when the template template definition is first seen ("phase 1 lookup"). Names that depend on a template parameter are looked up late, i.e. during template instantiation ("phase 2 lookup") so that the lookup can find names relating to actual template arguments. [[TC plus plus PL | TC++PL]] C::13.8.\par
+\par
+type - a built-in type or a user-defined type. A type defines the proper use of a name or an expression. [[TC plus plus PL | TC++PL]] 2.3.1, 4.1.\par
+\par
+type checking - the process of checking that every expression is used according to its type. the compiler checks every expression based on the declared types of the names involved. [[TC plus plus PL | TC++PL]] 7.2-3, 24.2.3, D&E 2.3, 2.6, 3.10, 3.15, 9.2.2.1.\par
+\par
+type conversion - producing a value of one type from a value of another type. A type conversion can be an implicit conversion or an explicit conversion. See also: user-defined type conversion, cast. [[TC plus plus PL | TC++PL]] 6.2.7.\par
+\par
+type safety - the property that an object can be accessed only according to its definition. C++ approximates this ideal. A programmer can violate type safety by explicitly using a cast, by using an uninitialized variable, by using a pointer that doesn't point to an object, by accessing beyond the end of an array, and by misusing a union. For low-level systems code, it can be necessary to violate type safety (e.g. to write out the byte representation of some objects), but generally type safety must be preserved for a program to be correct and maintainable.\par
+\par
+type system - the set of rules for how objects can be used according to their types. See also: type checking.\par
+\par
+typedef - synonym for some type declared using the keyword typedef.\par
+\par
+typeid() - operator returning basic type information. [[TC plus plus PL | TC++PL]] 15.4.4, D&E 14.2.5.\par
+\par
+typename - (1) an alternative to "class" when declaring template arguments; for example, "template<typename T> void f(T);" (2) a way of telling a compiler that a name is meant to name a type in template code; for example "template<class T> void f(T a) \{ typename T::diff_type x = 0; ... \}". [[TC plus plus PL | TC++PL]] C::13.5.\par
+\par
+type_info - class containing basic run time type information. [[TC plus plus PL | TC++PL]] 15.4.4, D&E 14.2.5.1.\par
+\par
+unary operator - an operator taking one operand, such as ! and unary *.\par
+\par
+uncaught exception - Exception for which no handler was found. Invokes terminate(), which by default terminates the program. [[TC plus plus PL | TC++PL]] 14.7.\par
+\par
+undefined - an aspect of C++'s semantics for which no reasonable behavior is required. An example is dereferencing a pointer with the value zero. Avoid undefined behavior. See also: implementation defined. [[TC plus plus PL | TC++PL]] C.2.\par
+\par
+uninitialized memory - memory that hasn't been initialized to hold a specific value of a type. [[TC plus plus PL | TC++PL]] 19.4.4.\par
+\par
+union - a struct with all members allocated at the same offset within an object. The language does not guarantee type safety for all uses of unions. Primarily used to save space. [[TC plus plus PL | TC++PL]] C.8.2.\par
+\par
+upcast - a cast from a derived class to one of its bases. See also: downcast, crosscast. [[TC plus plus PL | TC++PL]] 15.4.\par
+\par
+user-defined type - Class or enumeration. A programmer can define meanings for operators for user-defined types. See also: operator overloading. [[TC plus plus PL | TC++PL]] 6.2, 11, D&E 3.6, 11.7.1.\par
+\par
+user-defined type conversion - a user can define conversions either as constructors or conversion operators. These conversions are applied explicitly or implicitly just like built-in conversions. [[TC plus plus PL | TC++PL]] 11.3.5, 11.4, D&E 3.6.1, 3.6.3.\par
+\par
+using - see using-directive and using-declaration.\par
+\par
+using-declaration - declaration of a local synonym for a name in another namespace or class. Example of using-declaration used to simplify overloading. See also: overloading, argument-based lookup. [[TC plus plus PL | TC++PL]] 8.2.2. D&E 17.4.\par
+\par
+using-directive - directive making a namespace accessible. See also: argument-based lookup. [[TC plus plus PL | TC++PL]] 8.2.3. D&E 17.4.\par
+\par
+valarray - standard library numeric vector type supporting vector operations. [[TC plus plus PL | TC++PL]] 22.4.\par
+\par
+value - the bits of an object interpreted according to the objects type.\par
+\par
+value return - The semantics of function return is to pass a copy of the return value. The copy operation is defined by the return type's copy constructor. [[TC plus plus PL | TC++PL]] 7.4.\par
+\par
+variable - named object in a scope. [[TC plus plus PL | TC++PL]] 2.3.1, 10.4.3, D&E 2.3.\par
+\par
+variable definition - declaration of a named object of a data type without an extern specifier.\par
+\par
+vector - standard library template providing contiguous storage, re-sizing and the useful push_back() functions for adding elements at the end. Vector is the default container. See also: map, multimap, list, deque. [[TC plus plus PL | TC++PL]] 3.7.1, 16.3.\par
+\par
+virtual - keyword used to declare a member function virtual.\par
+\par
+virtual base - a base that is shared by all classes in a class hierarchy that has declared it virtual. [[TC plus plus PL | TC++PL]] 15.2.4, D&E 12.3, 12.4.1.\par
+\par
+virtual constructor - a constructor cannot be virtual, because to create an object, we need complete information of its type. "virtual constructor" is the name of a technique for calling a virtual function to create an object of an appropriate type. Example. [[TC plus plus PL | TC++PL]] 12.4.4, 15.6.2.\par
+\par
+virtual destructor - a destructor declared virtual to ensure that the proper derived class destructor is called if an object of a derived class is deleted through a pointer to a base class. If a class has any virtual functions, it should have a virtual destructor. Example. [[TC plus plus PL | TC++PL]] 12.4.2, D&E 10.5.\par
+\par
+virtual member function - a member function that a derived class can override; the primary mechanism for run-time polymorphism in C++. A virtual member function is sometimes called a method. See also: overriding, pure virtual function. [[TC plus plus PL | TC++PL]] 2.5.4, 2.5.5, 12.2.6, D&E 3.5, 12.4.\par
+\par
+virtual-function pointer - a pointer to a class' virtual function table.\par
+\par
+virtual-function table - table of all virtual functions for a class. The most common way of implementing virtual functions is to have each object of a class with virtual functions contain a virtual function pointer pointing to the class' virtual function table.\par
+\par
+visitor pattern - a way of using double dispatch to simulate virtual calls without adding new virtual functions.\par
+\par
+Visual C++ - Microsoft's implementation of C++ together with proprietary libraries for Windows programming in an IDE.\par
+\par
+void - a keyword used to indicate an absence of information. [[TC plus plus PL | TC++PL]] 4.1.1, 4.7.\par
+\par
+void* - pointer to void; that is, a pointer to an object of unknown type; also called pointer to raw memory. A void* cannot be used or assigned without a cast. [[TC plus plus PL | TC++PL]] 5.6, D&E 11.2.1, 11.2.3. ([[BSCppG]] [[2012]])\par
+\par
+\par
+volatile - attribute of a declaration telling the compiler that an entity can have its value changed by extralinguistic means; for example, a real time clock: "extern volatile const long clock;". Limits optimizations. [[TC plus plus PL | TC++PL]] A.7.1. ([[BSCppG]] [[2012]])\par
+\par
+\par
+vptr - see virtual-function pointer. ([[BSCppG]] [[2012]])\par
+\par
+\par
+vtbl - see virtual-function table. ([[BSCppG]] [[2012]])\par
+\par
+\par
+wchar_t - wide character type. Used to hold characters of character sets that require more than a byte to represent, such as unicode. [[TC plus plus PL | TC++PL]] 4.3, C.3.3. See also: large character sets, universal character name. ([[BSCppG]] [[2012]])\par
+\par
+\par
+WG21 - a common abbreviation of the name of the ISO C++ standards committee. ([[BSCppG]] [[2012]])\par
+\par
+\par
+while-statement - a loop statement presenting its condition "at the top". For example, while (cin>>var) vec.push_back(var); ([[BSCppG]] [[2012]])\par
+\par
+\par
+whitespace - characters that a represented only by the space they take up on a page or screen. The most common examples are space (' '), newline ('\\n'), and tab ('\\t'). ([[BSCppG]] [[2012]])\par
+\par
+\par
+word - a number of bytes that on a given machine is particularly suied to holding an integers or a pointer. On many machines, an object must be aligned on a word boundary for acceptable performance. An int is typically a stored in a word. Often, a word is 4 bytes. See also: alignment. [[TC plus plus PL | TC++PL]] 4.6. ([[BSCppG]] [[2012]])\par
+\par
+\par
+xor - synonym for ^, the bitwise exclusive or operator [[TC plus plus PL | TC++PL]] C.3.1. ([[BSCppG]] [[2012]])\par
+\par
+\par
+zero - see NULL. ([[BSCppG]] [[2012]])\par
+\par
+==Fair Use Sources==\par
+[[Fair Use]] [[Sources]]:\par
+* [[BSCppG]] [[2012]]\par
+\par
+\{\{navbar_footer\}\}\par
+\par
+\par
+\par
+\par
+}
+ 
