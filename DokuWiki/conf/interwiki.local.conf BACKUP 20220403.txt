@@ -1,0 +1,472 @@
+# Be sure to automated copy this interwiki.local.conf file to ALL of the DokuWiki sites!
+
+# Located in the conf directory of the DokuWiki site main folder
+# Updated by Losang Jinpa a.k.a. The Cloud Monk
+# http://CloudMonk.io and https://DevOpsCloud.io
+
+
+# Each URL may contain one of these placeholders
+# {URL}  is replaced by the URL encoded representation of the wikiname
+#        this is the right thing to do in most cases
+# {NAME} this is replaced by the wikiname as given in the document
+#        only mandatory encoded is done, urlencoding if the link
+#        is an external URL, or encoding as a wikiname if it is an
+#        internal link (begins with a colon)
+# {SCHEME}
+# {HOST}
+# {PORT}
+# {PATH}
+# {QUERY} these placeholders will be replaced with the appropriate part
+#         of the link when parsed as a URL
+# If no placeholder is defined the urlencoded name is appended to the URL
+
+# To prevent losing your added InterWiki shortcuts after an upgrade,
+# you should add new ones to interwiki.local.conf
+
+
+# CUSTOMIZATIONS
+
+# == Buddha Dharma ==
+fpmt       https://duckduckgo.com/?sites=fpmt.org+&q=
+lamayeshe  https://duckduckgo.com/?sites=lamayeshe.com+&q=
+cttb       https://duckduckgo.com/?sites=cttbusa.org+&q=
+berzin     https://duckduckgo.com/?sites=studybuddhism.com/en+&q=
+
+# == Wiki's, Encyclopedias and Dictionaries==
+britannica https://www.britannica.com/search?query=
+wp        https://en.wikipedia.org/wiki/{NAME}
+
+# NOTE - Wiktionary is case sensitive e.g. https://en.wiktionary.org/wiki/Impermanence
+dict      https://en.wiktionary.org/wiki/
+wiktionary https://en.wiktionary.org/wiki/
+
+quote     https://en.wikiquote.org/wiki/
+wikiquote https://en.wikiquote.org/wiki/
+
+wikipedia https://en.wikipedia.org/w/index.php?search=
+cp        https://www.conservapedia.com/{NAME}
+tpedia    https://www.techopedia.com/search?q=
+techtarget https://whatis.techtarget.com/search/query?q=
+ap        https://www.appropedia.org/{NAME}
+
+
+yt        https://youtube.com/results?search_query=
+youtube   https://youtube.com/results?search_query=
+podcast   https://podcasts.google.com/search/
+
+# === InterDokuWiki with other Cloud Monk Sites ===
+
+buddha     https://Buddha-Wisdom.org/doku.php?id=
+
+cloudmonk https://CloudMonk.io/
+cm        https://CloudMonk.io/wiki/doku.php?id=
+
+devopscloud https://DevOpsCloud.io/doku.php?id=
+
+cloudops  https://Cloud-Operations.io/doku.php?id=
+
+zdevops   https://ZDevOps.Guru/doku.php?id=
+
+mfdevops  https://MainframeDevOps.io/doku.php?id=
+
+mldataops https://MLdataOps.io/doku.php?id=
+
+mlops     https://MLops.Guru/doku.php?id=
+
+pydata    https://PythonDataOps.com/doku.php?id=
+pydataops https://PythonDataOps.com/doku.php?id=
+
+sqldb     https://SQLdb.Guru/doku.php?id=
+
+azureguru https://Azure-Cloud.Guru/doku.php?id=
+
+awsguru   https://Amazon-Cloud.Guru/doku.php?id=
+
+gcpguru   https://GCP-Cloud.Guru/doku.php?id=
+
+azcloudengineer  https://Azure-Cloud.Engineer/doku.php?id=
+
+devsecops https://AzureDevSecOps.com/doku.php?id=
+
+certifiedcloudengineer https://CertifiedCloud.Engineer/doku.php?id=
+
+cloudarchitect https://Cloud-Architect.Pro/doku.php?id=
+
+ahai      https://Ayurveda-Institute.org/ayurvedic-medicine-online-course/doku.php?id=
+mbhc      https://Ayurveda-Institute.org/ayurvedic-medicine-online-course/doku.php?id=
+
+ayurvedic.io https://Ayurvedic.io/doku.php?id=
+
+ayurvedic.live https://Ayurvedic.Live/doku.php?id=
+
+perma     https://Permaculture.Live/doku.php?id=
+permaculture  https://Permaculture.Live/doku.php?id=
+
+scifi     https://SciFi.Love/doku.php?id=
+
+
+
+# === Support Resources, FAQs, Q&A, Docs, Blogs ===
+github    https://github.com/search?q=
+ms        https://docs.microsoft.com/en-us/search/?terms=
+aws       https://aws.amazon.com/search/?searchQuery=
+gcp       https://cloud.google.com/s/results?q=
+ibm       https://www.ibm.com/search?lang=en&cc=us&q=
+db2       https://www.ibm.com/support/pages/ibmsearch?q=
+do        https://www.digitalocean.com/community/tutorials?subtype=-tech_talk&q=
+drop      https://www.digitalocean.com/community/tutorials?subtype=-tech_talk&q=
+android   https://developer.android.com/s/results?q=
+oracle    https://docs.oracle.com/search/?q=
+vmware    https://www.vmware.com/search.html?q=
+stackoverflow     https://stackoverflow.com/search?q=
+so        https://stackoverflow.com/search?q=
+xda       https://www.xda-developers.com/search/
+stackexchange     https://stackexchange.com/search?q=
+superuser https://superuser.com/search?q=
+su        https://superuser.com/search?q=
+serverfault https://serverfault.com/search?q=
+sf        https://serverfault.com/search?q=
+
+# === Database Software Official Docs ===
+# Oracle   https://duckduckgo.com/?sites=docs.oracle.com+&q=
+MySQL  https://duckduckgo.com/?sites=DOM+&q=
+SQLServer  https://duckduckgo.com/?sites=DOM+&q=
+SQLSrv  https://duckduckgo.com/?sites=DOM+&q=
+
+PostgreSQL  https://duckduckgo.com/?sites=DOM+&q=
+Postgre  https://duckduckgo.com/?sites=DOM+&q=
+
+MongoDB  https://duckduckgo.com/?sites=DOM+&q=
+Mongo  https://duckduckgo.com/?sites=DOM+&q=
+
+Redis  https://duckduckgo.com/?sites=DOM+&q=
+Elasticsearch  https://duckduckgo.com/?sites=DOM+&q=
+SQLite  https://duckduckgo.com/?sites=DOM+&q=
+Cassandra  https://duckduckgo.com/?sites=DOM+&q=
+MariaDB  https://duckduckgo.com/?sites=DOM+&q=
+Maria  https://duckduckgo.com/?sites=DOM+&q=
+
+Splunk  https://duckduckgo.com/?sites=DOM+&q=
+AzureSQL  https://duckduckgo.com/?sites=DOM+&q=
+Hive  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonDynamoDB  https://duckduckgo.com/?sites=DOM+&q=
+DynamoDB  https://duckduckgo.com/?sites=DOM+&q=
+
+Snowflake  https://duckduckgo.com/?sites=DOM+&q=
+Teradata  https://duckduckgo.com/?sites=DOM+&q=
+Solr  https://duckduckgo.com/?sites=DOM+&q=
+Neo4j  https://duckduckgo.com/?sites=DOM+&q=
+SAPHANA  https://duckduckgo.com/?sites=DOM+&q=
+SAPAdaptiveServer  https://duckduckgo.com/?sites=DOM+&q=
+
+GoogleBigQuery  https://duckduckgo.com/?sites=DOM+&q=
+BigQuery  https://duckduckgo.com/?sites=DOM+&q=
+
+HBase  https://duckduckgo.com/?sites=DOM+&q=
+
+AzureCosmosDB  https://duckduckgo.com/?sites=DOM+&q=
+CosmosDB  https://duckduckgo.com/?sites=DOM+&q=
+Cosmos  https://duckduckgo.com/?sites=DOM+&q=
+
+PostGIS  https://duckduckgo.com/?sites=DOM+&q=
+InfluxDB  https://duckduckgo.com/?sites=DOM+&q=
+Couchbase   https://duckduckgo.com/?sites=DOM+&q=
+Firebird  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonRedshift  https://duckduckgo.com/?sites=DOM+&q=
+Redshift  https://duckduckgo.com/?sites=DOM+&q=
+
+Memcached  https://duckduckgo.com/?sites=DOM+&q=
+Informix  https://duckduckgo.com/?sites=DOM+&q=
+SparkSQL  https://duckduckgo.com/?sites=DOM+&q=
+Firebase  https://duckduckgo.com/?sites=DOM+&q=
+
+AzureSynapseAnalytics  https://duckduckgo.com/?sites=DOM+&q=
+AzureSynapse  https://duckduckgo.com/?sites=DOM+&q=
+
+CouchDB   https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonAurora  https://duckduckgo.com/?sites=DOM+&q=
+Aurora  https://duckduckgo.com/?sites=DOM+&q=
+
+etcd  https://duckduckgo.com/?sites=DOM+&q=
+H2  https://duckduckgo.com/?sites=DOM+&q=
+
+GoogleCloudFirestore  https://duckduckgo.com/?sites=DOM+&q=
+GoogleFirestore  https://duckduckgo.com/?sites=DOM+&q=
+Firestore  https://duckduckgo.com/?sites=DOM+&q=
+
+AzureSearch  https://duckduckgo.com/?sites=DOM+&q=
+OracleEssbase  https://duckduckgo.com/?sites=DOM+&q=
+CockroachDB  https://duckduckgo.com/?sites=DOM+&q=
+AzureDataExplorer  https://duckduckgo.com/?sites=DOM+&q=
+Prometheus  https://duckduckgo.com/?sites=DOM+&q=
+Ingres  https://duckduckgo.com/?sites=DOM+&q=
+SAPSQLAnywhere  https://duckduckgo.com/?sites=DOM+&q=
+AzureTableStorage  https://duckduckgo.com/?sites=DOM+&q=
+SAPIQ  https://duckduckgo.com/?sites=DOM+&q=
+
+GoogleCloudDatastore  https://duckduckgo.com/?sites=DOM+&q=
+GoogleDatastore  https://duckduckgo.com/?sites=DOM+&q=
+
+ArangoDB  https://duckduckgo.com/?sites=DOM+&q=
+OrientDB  https://duckduckgo.com/?sites=DOM+&q=
+OracleNoSQL  https://duckduckgo.com/?sites=DOM+&q=
+SAPAdvantage  https://duckduckgo.com/?sites=DOM+&q=
+IBMCloudant  https://duckduckgo.com/?sites=DOM+&q=
+
+GoogleCloudBigtable  https://duckduckgo.com/?sites=DOM+&q=
+GoogleBigtable  https://duckduckgo.com/?sites=DOM+&q=
+Bigtable  https://duckduckgo.com/?sites=DOM+&q=
+
+GoogleCloudSpanner  https://duckduckgo.com/?sites=DOM+&q=
+CloudSpanner  https://duckduckgo.com/?sites=DOM+&q=
+
+ApacheDruid  https://duckduckgo.com/?sites=DOM+&q=
+ApachePhoenix  https://duckduckgo.com/?sites=DOM+&q=
+RavenDB   https://duckduckgo.com/?sites=DOM+&q=
+RethinkDB  https://duckduckgo.com/?sites=DOM+&q=
+GraphDB  https://duckduckgo.com/?sites=DOM+&q=
+ApacheJena  https://duckduckgo.com/?sites=DOM+&q=
+ApacheDrill  https://duckduckgo.com/?sites=DOM+&q=
+OracleBerkeleyDB  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonNeptune  https://duckduckgo.com/?sites=DOM+&q=
+Neptune  https://duckduckgo.com/?sites=DOM+&q=
+
+IMS  https://duckduckgo.com/?sites=DOM+&q=
+OracleCoherence  https://duckduckgo.com/?sites=DOM+&q=
+PerconaServerForMySQL  https://duckduckgo.com/?sites=DOM+&q=
+EDBPostgres  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonCloudSearch  https://duckduckgo.com/?sites=DOM+&q=
+CloudSearch  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonSimpleDB  https://duckduckgo.com/?sites=DOM+&q=
+SimpleDB  https://duckduckgo.com/?sites=DOM+&q=
+
+Db2Warehouse  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonDocumentDB  https://duckduckgo.com/?sites=DOM+&q=
+DocumentDB  https://duckduckgo.com/?sites=DOM+&q=
+
+ApacheKylin  https://duckduckgo.com/?sites=DOM+&q=
+GridDB  https://duckduckgo.com/?sites=DOM+&q=
+OracleRdb  https://duckduckgo.com/?sites=DOM+&q=
+SQL.JS  https://duckduckgo.com/?sites=DOM+&q=
+NonStopSQL  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonTimestream  https://duckduckgo.com/?sites=DOM+&q=
+Timestream  https://duckduckgo.com/?sites=DOM+&q=
+
+D3  https://duckduckgo.com/?sites=DOM+&q=
+EventStoreDB  https://duckduckgo.com/?sites=DOM+&q=
+PostgresXL  https://duckduckgo.com/?sites=DOM+&q=
+PerconaServerForMongoDB  https://duckduckgo.com/?sites=DOM+&q=
+WebSphereeXtremeScale  https://duckduckgo.com/?sites=DOM+&q=
+
+AmazonKeyspaces  https://duckduckgo.com/?sites=DOM+&q=
+Keyspaces  https://duckduckgo.com/?sites=DOM+&q=
+
+Db2EventStore  https://duckduckgo.com/?sites=DOM+&q=
+
+
+# === Programming Language and Software Official Docs ===
+angular   https://duckduckgo.com/?sites=angular.io+&q=
+bash      https://duckduckgo.com/?sites=gnu.org/software/bash+&q=
+clang     https://duckduckgo.com/?sites=iso-9899.info+&q=
+cplusplus https://www.cplusplus.com/search.do?q=
+ccpref    https://duckduckgo.com/?sites=cppreference.com+&q=
+cpp       https://duckduckgo.com/?sites=cppreference.com+&q=
+isocpp    https://isocpp.org/search/google?q=
+csharp    https://www.c-sharpcorner.com/search.aspx?q=
+
+# Java https://docs.oracle.com/search/?q=class&category=java&product=en%2Fjava
+java      https://docs.oracle.com/search/?q=
+heinz     https://duckduckgo.com/?sites=javaspecialists.eu+&q=
+bd        https://www.baeldung.com/?s=
+baeldung  https://www.baeldung.com/?s=
+clojure   https://duckduckgo.com/?sites=clojuredocs.org+&q=
+cobol     https://duckduckgo.com/?sites=microfocus.com/documentation/visual-cobol+&q=
+dart      https://dart.dev/search?cx=en&q=
+django    https://docs.djangoproject.com/en/3.2/search/?q=
+elixir    https://duckduckgo.com/?sites=elixir-lang.org+&q=
+excel     https://duckduckgo.com/?sites=docs.microsoft.com/en-us/office/client-developer/excel+&q=
+fortran   https://duckduckgo.com/?sites=fortran-lang.org+&q=
+fortranlib   https://duckduckgo.com/?sites=stdlib.fortran-lang.org+&q=
+fortraniso   https://duckduckgo.com/?sites=wg5-fortran.org+&q=
+golang    https://duckduckgo.com/?sites=golang.org+&q=
+groovy    https://duckduckgo.com/?sites=docs.groovy-lang.org+&q=
+haskell   https://duckduckgo.com/?sites=haskell.org+&q=
+js        https://developer.mozilla.org/en-US/search?q=
+mdn       https://developer.mozilla.org/en-US/search?q=
+kotlin    https://kotlinlang.org/docs/home.html?q=
+mainframe https://duckduckgo.com/?sites=ibmmainframer.com+&q=
+
+appledev  https://developer.apple.com/search/?q=
+apple     https://www.apple.com/us/search/
+applesup  https://support.apple.com/kb/index?page=search&type=organic&src=support_searchbox_main&locale=en_US&q=
+
+numpy     https://duckduckgo.com/?sites=numpy.org/doc/stable+&q=
+pandas    https://duckduckgo.com/?sites=pandas.pydata.org/pandas-docs/stable+&q=
+php       https://www.php.net/manual-lookup.php?pattern=
+powershell https://duckduckgo.com/?sites=docs.microsoft.com/en-us/powershell+&q=
+python    https://www.python.org/search/?q=
+pythondocs https://duckduckgo.com/?sites=docs.python.org+&q=
+PyMOTW    https://duckduckgo.com/?sites=pymotw.com/3+&q=
+r         https://www.rdocumentation.org/search?q=
+rexx      https://duckduckgo.com/?sites=ibmmainframer.com+&q=
+react     https://duckduckgo.com/?sites=reactjs.org+&q=
+ruby      https://duckduckgo.com/?sites=ruby-lang.org+&q=
+rails     https://duckduckgo.com/?sites=guides.rubyonrails.org+&q= 
+rust      https://duckduckgo.com/?sites=rust-lang.org+&q=
+scala     https://duckduckgo.com/?sites=scala-lang.org+&q=
+spring    https://duckduckgo.com/?sites=spring.io+&q=
+swift     https://duckduckgo.com/?sites=swift.org+&q=
+tsql      https://duckduckgo.com/?sites=docs.microsoft.com/en-us/sql/t-sql+&q=
+python    https://www.python.org/search/?q=
+ts        https://duckduckgo.com/?sites=typescriptlang.org+&q=
+vuejs     https://duckduckgo.com/?sites=vuejs.org+&q=
+
+
+
+ansible   https://duckduckgo.com/?sites=docs.ansible.com+&q=
+chef      https://duckduckgo.com/?sites=puppet.com/docs+&q=
+puppet    https://duckduckgo.com/?sites=docs.chef.io+&q=
+ 
+dh        https://help.dreamhost.com/hc/en-us/search?query=
+dreamhost https://help.dreamhost.com/hc/en-us/search?query=
+
+
+
+
+# ===Linux Docs===
+linuxq    https://wiki.linuxquestions.org/index.php?search=
+askubuntu https://askubuntu.com/search?q=
+debian    https://search.debian.org/cgi-bin/omega?DB=en&P=
+redhat    https://duckduckgo.com/?sites=developers.redhat.com+&q=
+# redhat    https://access.redhat.com/search/#/?q=
+fedora    https://duckduckgo.com/?sites=fedoraproject.org+&q=
+snap      https://snapcraft.io/search?q=
+linux     https://www.linux.org/search/?q=
+man       https://man.cx/
+freebsd   https://duckduckgo.com/?sites=forums.freebsd.org+&q=
+
+# ===Search Engines==
+brave     https://search.brave.com/search?q=
+ddg       https://duckduckgo.com/?q=
+google    https://google.com/search?q=
+bing      https://bing.com/search?q=
+yahoo     https://search.yahoo.com/search?p=
+
+# == Blogs and Magazines ==
+dzone     https://duckduckgo.com/?sites=dzone.com+&q=
+hackernoon https://duckduckgo.com/?sites=hackernoon.com+&q=
+hackernews https://duckduckgo.com/?sites=thehackernews.com+&q=
+wired     https://www.wired.com/search/?q=
+
+macworld  https://www.macworld.com/search?q=
+pcworld   https://www.pcworld.com/search?q=
+networkworld https://www.networkworld.com/search?q=
+infoworkworld https://www.infoworkworld.com/search?q=
+miles     https://duckduckgo.com/?sites=milesmathis.com+&q=
+
+reddit    https://reddit.com/search?q=
+quora     https://quora.com/search?q=
+
+linkedin  https://duckduckgo.com/?sites=linkedin.com+&q=
+twitter   https://twitter.com/search?q=
+facebook  https://duckduckgo.com/?sites=facebook.com+&q=
+
+toms      https://www.tomshardware.com/search?searchTerm=
+freecode  https://www.freecodecamp.org/news/search/?query=
+
+# ==Apple==
+macrumors https://www.macrumors.com/search/?s=
+
+
+# ==Jobs==
+dice      https://www.dice.com/jobs?q=
+
+
+# ===Repositories and Package Managers===
+k8s       https://kubernetes.io/search/?q=
+docker    https://www.docker.com/search/node?keys=
+
+dockerhub https://hub.docker.com/search?type=image&q=
+# dockerhub https://hub.docker.com/search?q=
+dhub      https://hub.docker.com/search?type=image&q=
+bitnami   https://duckduckgo.com/?sites=bitnami.com/stack+&q=
+quay      https://quay.io/search?q=
+helm      https://artifacthub.io/packages/search?ts_query_web=
+artifacthub https://artifacthub.io/packages/search?ts_query_web=
+choco     https://community.chocolatey.org/packages?q=
+brew      https://duckduckgo.com/?q=site%3Ahttps%3A%2F%2Fformulae.brew.sh+
+harbor    https://duckduckgo.com/?sites=goharbor.io+&q=
+
+googleplay https://play.google.com/store/search?c=apps&q=
+linuxpkg  https://pkgs.org/search/?q=
+maven     https://search.maven.org/search?q=
+mavenrepo https://mvnrepository.com/search?q=
+gradle    https://plugins.gradle.org/search?term=
+npm       https://npmjs.com/search?q=
+pypi      https://pypi.org/search/?q=
+nuget     https://nuget.org/packages?q=
+rubygems  https://rubygems.org/search?&query=
+gitlab    https://gitlab.com/explore?=&name=
+bitbucket https://bitbucket.org/repo/all?name=
+
+
+# ===Networking===
+rfc       https://tools.ietf.org/html/rfc
+ietf https://www.ietf.org/search/?query=
+cisco     https://cisco.com/search=
+
+
+# ===Courses===
+ps       https://duckduckgo.com/?sites=pluralsight.com+&q=
+pluralsight https://duckduckgo.com/?sites=pluralsight.com+&q=
+udemy    https://udemy.com/courses/search/?q=
+acloudguru https://duckduckgo.com/?sites=acloudguru.com+&q=
+li       https://linkedin.com/learning/search?keywords=
+linkedinlearning       https://linkedin.com/learning/search?keywords=
+lil       https://linkedin.com/learning/search?keywords=
+coursera https://duckduckgo.com/?sites=coursera.org+&q=
+
+
+# ===Books===
+isbn     https://www.worldcat.org/search?q=
+oreilly  https://learning.oreilly.com/search/?query=
+manning  https://duckduckgo.com/?sites=manning.com+&q=
+amz https://amazon.com/s?k=
+audible  https://audible.com/search?keywords=
+googlebooks https://www.google.com/search?tbm=bks&q=
+apress   https://duckduckgo.com/?sites=apress.com+&q=
+packt    https://duckduckgo.com/?sites=packtpub.com+&q=
+pragprog https://duckduckgo.com/?sites=pragprog.com+&q=
+goodreads https://www.goodreads.com/search?q=
+
+zipcode https://www.unitedstateszipcodes.org/
+
+
+wpfr      https://fr.wikipedia.org/wiki/{NAME}
+wpde      https://de.wikipedia.org/wiki/{NAME}
+wpes      https://es.wikipedia.org/wiki/{NAME}
+wppl      https://pl.wikipedia.org/wiki/{NAME}
+wpjp      https://ja.wikipedia.org/wiki/{NAME}
+wpmeta    https://meta.wikipedia.org/wiki/{NAME}
+doku      https://www.dokuwiki.org/
+amazon    https://www.amazon.com/dp/{URL}?tag=splitbrain-20
+amazon.de https://www.amazon.de/dp/{URL}?tag=splitbrain-21
+amazon.uk https://www.amazon.co.uk/dp/{URL}
+paypal    https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&amp;business=
+phpfn     https://secure.php.net/{NAME}
+skype     skype:{NAME}
+google.de https://www.google.de/search?q=
+go        https://www.google.com/search?q={URL}&amp;btnI=lucky
+user      :user:{NAME}
+
+# To support VoIP/SIP/TEL links
+callto    callto://{NAME}
+tel       tel:{NAME}
